@@ -14,12 +14,12 @@
 
 <br>
 
-### - HTML
-### - CSS
-### - JavaScript
-### - Git
-### - GitHub
-### - Figma
+- HTML
+- CSS
+- JavaScript
+- Git
+- GitHub
+- Figma
 
 <br>
 
