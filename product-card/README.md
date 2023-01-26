@@ -11,13 +11,12 @@
 
 ## __NESSE PROJETO, FOI UTILIZADO...__
 
-
-### - HTML
-### - CSS
-### - JavaScript
-### - Git
-### - GitHub
-### - Figma
+#### - HTML
+#### - CSS
+#### - JavaScript
+#### - Git
+#### - GitHub
+#### - Figma
 
 #
 
