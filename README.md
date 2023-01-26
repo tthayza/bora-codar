@@ -6,7 +6,7 @@
 ## __DESAFIOS FEITOS__
  <br>
 
-### - [Card de Produto - 02]()
+### - [Card de Produto - 02](https://github.com/tthayza/bora-codar/tree/main/product-card)
 
 #
 
