@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="profile-info">
+          <img src="./assets/avatar.svg" alt="avatar cecilia" />
+          <div class="info">
+            <h4>Cecilia Sassaki</h4>
+            <img src="./assets/status.svg" alt="status" />
+          </div>
+        </div>
+        <img class="close-btn" src="./assets/close.svg" alt="botão de fechar" />
+      </div>
+      <section class="message-box" id="message-box">
+        <div class="date">
+          <p>Hoje 11:30</p>
+        </div>
+        <div class="message">
+          <p class="info-first">Cecilia - 11:30</p>
+          <p class="message-first">
+            Tive uma ideia incrível para um projeto! 😍
+          </p>
+        </div>
+        <div class="message message-sent">
+          <p class="info-second">Você - 11:32</p>
+          <p class="message-second">Sério? Me conta mais</p>
+        </div>
+        <div class="message">
+          <p class="info-first">Cecilia - 11:34</p>
+          <p class="message-first">
+            E se a gente fizesse um chat moderno e responsivo em apenas uma
+            semana?
+          </p>
+        </div>
+        <div class="message message-sent">
+          <p class="info-second">Você - 11:36</p>
+          <p class="message-second">#boraCodar! 🚀</p>
+        </div>
+      </section>
+      <div class="msg-input">
+        <input type="text" id="box-input" placeholder="Digite sua mensagem" />
+        <button class="btn-send" id="submit" onclick="sendMessage()">
+          <img src="./assets/send.svg" alt="botao para enviar mensagem" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

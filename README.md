@@ -7,6 +7,7 @@
 
 #### - [Card de Produto - 02](https://github.com/tthayza/bora-codar/tree/main/product-card)
 #### - [Botões e Cursores - 03](https://github.com/tthayza/bora-codar/tree/main/buttons-cursors)
+#### - [Chat - 04](https://github.com/tthayza/bora-codar/tree/main/chat)
 
 #
 
