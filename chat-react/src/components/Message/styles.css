@@ -1,0 +1,32 @@
+.message {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.info-first {
+  margin-bottom: 8px;
+}
+
+.message-first {
+  background: #633bbc;
+  border-radius: 0px 8px 8px 8px;
+}
+
+.message-first,
+.message-second {
+  padding: 14px;
+  height: fit-content;
+  width: fit-content;
+  max-width: 50%;
+}
+
+.message-sent {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message-second {
+  background: #07847e;
+  border-radius: 8px 8px 0px 8px;
+}

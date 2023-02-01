@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1924;
+  color: #e1e1e6;
+  font-family: 'Roboto';
+  height: 100vh;
+}
+
+p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 72px;
+}

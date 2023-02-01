@@ -1,0 +1,31 @@
+.msg-input {
+  flex: 1;
+  position: relative;
+}
+
+.msg-input input {
+  margin-top: 24px;
+  width: 100%;
+  height: 52px;
+  background: #282843;
+  border-radius: 999px;
+  padding: 14px 24px;
+  border: none;
+  color: #e1e1e6;
+}
+
+.btn-send {
+  background-color: #282843;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+
+.btn-send {
+  cursor: pointer;
+}
+
+.btn-send:hover {
+  transform: scale(1.2);
+}

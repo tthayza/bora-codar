@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex: 1;
+  padding-bottom: 28px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  margin: 0 16px;
+}
+
+.info h4 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.close-btn {
+  height: 32px;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
