@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>🔢 Calculator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Nunito", sans-serif;
+        height: 100vh;
+        color: antiquewhite;
+        background-color: rgb(197, 137, 137);
+        display: grid;
+        place-content: center;
+      }
+
+
+
+      section h4 {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      #resultado {
+        background-color: antiquewhite;
+        height: 45px;
+        color: rgb(44, 14, 14);
+        margin: 1em 1em 1.5em;
+        justify-items: center;
+        padding: 3px;
+        overflow-wrap: break-word;
+        text-align: right;
+      }
+
+      .calculator {
+        background-color: rgb(28, 5, 14);
+        padding: 25px;
+        border-radius: 5px;
+        position:static;
+        max-width: 280px;
+      }
+
+      .botao {
+        margin-top: 6px;
+        width: 45px;
+        height: 45px;
+        background-color: rgb(51, 5, 24);
+        color: rgb(210, 179, 179);
+        font-size: 20px;
+        cursor: pointer;
+        margin: 5px;
+        border: none;
+        border-radius: 4px;
+      }
+
+      .botao:hover {
+        filter: brightness(135%);
+        color: rgb(118, 74, 95);
+        font-size: 21px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="calculator">
+      <section class="display">
+        <h4>CALCULATOR</h4>
+        <div id="resultado" class="resultado"></div>
+      </section>
+      <table>
+        <tr>
+          <td><button class="botao" data-clear-all>C</button></td>
+          <td>
+            <button
+              class="botao"
+              style="line-height: 17px; padding-right: 2px"
+              data-delete
+            >
+              ⌫
+            </button>
+          </td>
+          <td><button class="botao" data-operator="/">/</button></td>
+          <td>
+            <button class="botao" style="margin-left: 5px" data-operator="*">
+              X
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="botao" data-number="7">7</button></td>
+          <td><button class="botao" data-number="8">8</button></td>
+          <td><button class="botao" data-number="9">9</button></td>
+          <td>
+            <button class="botao" style="margin-left: 5px" data-operator="+">
+              +
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="botao" data-number="4">4</button></td>
+          <td><button class="botao" data-number="5">5</button></td>
+          <td><button class="botao" data-number="6">6</button></td>
+          <td>
+            <button class="botao" style="margin-left: 5px" data-operator="-">
+              -
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="botao" data-number="1">1</button></td>
+          <td><button class="botao" data-number="2">2</button></td>
+          <td><button class="botao" data-number="3">3</button></td>
+          <td rowspan="2">
+            <button
+              class="botao"
+              data-equal
+              style="height: 104px; margin-left: 5px"
+            >
+              =
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button class="botao" data-number="0" style="width: 104px">
+              0
+            </button>
+          </td>
+          <td><button class="botao" data-number=".">.</button></td>
+        </tr>
+      </table>
+    </main>
+    <script>
+      //
+
+      let previousNumber = ""
+      let currentNumber = ""
+      let operation = ""
+
+      function addNumber(number) {
+        if (operation === "") {
+          if (previousNumber.includes(".") && number === ".") return
+          previousNumber += number
+        } else {
+          if (currentNumber.includes(".") && currentNumber === ".") return
+          currentNumber += number
+        }
+
+        updateScreen()
+      }
+
+      function chooseOperation(operator) {
+        if (operation != "" && currentNumber != "") {
+          calculate()
+        }
+        operation = operator
+        updateScreen()
+      }
+
+      const display = document.getElementById("resultado")
+
+      function formatNumber(number) {
+        number = number.toString()
+        const integer = Number(number.split(".")[0].replace(/,/g, ""))
+        const decimal = number.split(".")[1]
+
+        if (decimal === undefined) {
+          number = integer.toLocaleString("en", {
+            maximumFractionDigits: 0
+          })
+        } else {
+          number = `${integer.toLocaleString("en", {
+            maximumFractionDigits: 0
+          })}.${decimal}`
+        }
+        return number
+      }
+
+      function updateScreen() {
+        if (operation === "") {
+          previousNumber = formatNumber(previousNumber)
+          display.innerHTML = previousNumber
+        } else {
+          if (currentNumber) {
+            currentNumber = formatNumber(currentNumber)
+          }
+          previousNumber = formatNumber(previousNumber)
+
+          display.innerHTML = `${previousNumber} ${operation} ${currentNumber}`
+        }
+      }
+
+      function calculate() {
+        // if (operation === "/" && currentNumber === "0") {
+        //   display.innerHTML = "Não é possível"
+        //   return
+
+        // }
+        previousNumber = Number(previousNumber.replace(/,/g, ""))
+        currentNumber = Number(currentNumber.replace(/,/g, ""))
+
+        switch (operation) {
+          case "+":
+            previousNumber += currentNumber
+            break
+          case "-":
+            previousNumber -= currentNumber
+            break
+          case "/":
+            previousNumber /= currentNumber
+            break
+          case "*":
+            previousNumber *= currentNumber
+            break
+          default:
+            break
+        }
+
+        operation = ""
+        currentNumber = ""
+      }
+
+      function clearScreen() {
+        previousNumber = ""
+        currentNumber = ""
+        operation = ""
+      }
+
+      function deleteLast() {
+        if (operation === "") {
+          previousNumber = previousNumber.slice(0, -1)
+        } else {
+          currentNumber = currentNumber.slice(0, -1)
+        }
+        updateScreen()
+      }
+
+      const numButtons = document.querySelectorAll("[data-number]")
+      numButtons.forEach(button =>
+        button.addEventListener("click", () => addNumber(button.dataset.number))
+      )
+
+      const opButtons = document.querySelectorAll("[data-operator]")
+      opButtons.forEach(button =>
+        button.addEventListener("click", () =>
+          chooseOperation(button.dataset.operator)
+        )
+      )
+
+      const equalButton = document.querySelector("[data-equal]")
+      equalButton.addEventListener("click", () => {
+        calculate(), updateScreen()
+      })
+
+      const clearAll = document.querySelector("[data-clear-all")
+      clearAll.addEventListener("click", () => {
+        clearScreen(), updateScreen()
+      })
+
+      const backSpace = document.querySelector("[data-delete]")
+      backSpace.addEventListener("click", () => {
+        deleteLast(), updateScreen()
+      })
+    </script>
+  </body>
+</html>
