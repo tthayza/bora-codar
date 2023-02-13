@@ -1,0 +1,18 @@
+.passenger-box {
+  display: flex;
+  justify-content: space-between;
+  border-top: dashed gray 2.2px;
+  border-bottom: dashed gray 2.2px;
+  padding: 24px 0px;
+  width: 327px;
+  height: 84px;
+}
+
+.passenger-name {
+  text-align: left;
+}
+
+.seat-number {
+  text-align: right;
+}
+

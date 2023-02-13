@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  background-color: #8257e5;
+  /* background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%); */
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+h2 {
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  padding: 24px 32px;
+  gap: 24px;
+
+  width: fit-content;
+  height: fit-content;
+
+  border-radius: 24px;
+  margin-bottom: 20px;
+}
+

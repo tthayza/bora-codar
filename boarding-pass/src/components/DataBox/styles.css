@@ -1,0 +1,22 @@
+.data-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.data-box-flight {
+  text-align: left;
+}
+
+.data-box-date {
+  text-align: right;
+}
+
+.info{
+  letter-spacing: -0.02em;
+
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}

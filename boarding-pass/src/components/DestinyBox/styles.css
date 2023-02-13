@@ -1,0 +1,31 @@
+.destiny-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.from {
+  text-align: left;
+}
+
+.to {
+  text-align: right;
+}
+
+
+.local {
+  color: rgba(0, 0, 0, 0.88);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.time {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+}
