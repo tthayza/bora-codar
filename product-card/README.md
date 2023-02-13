@@ -1,24 +1,16 @@
-# __Card de Produto 🛋__
+# <h1 style="text-align:center">__#boraCodar um Card de Produto 🛋__</h1>
+#### <h3 style="text-align:center">A funcionalidade do projeto é demonstrar um produto através de uma imagem estática e uma imagem animada rotativa em 360º ao clicar no botão. Além disso, também contém o detalhamento do produto, como: o valor e código do produto. </h3>
+#
 
-## __SOBRE A PÁGINA__
+<p align="center">
+  <img src="preview.png">
+</p>
+
+#### <h3 style="text-align:center"> Esse projeto foi desenvolvido com </h3>
+### <p style="text-align:center"> __HTML | CSS | JavaScript | Git | GitHub | Figma__</p>
+
 <br>
 
-### A funcionalidade do projeto é demonstrar um produto através de uma imagem estática e uma imagem animada rotativa em 360º. Além disso, também contém o detalhamento do produto, como: o valor e código do produto.
+### <h2 style="text-align:center"> [Acesse meu perfil no Linkedin aqui](https://www.linkedin.com/in/tthayza-oliveira/) </h2>
 
-#
-
-![preview](preview.png)
-
-## __NESSE PROJETO, FOI UTILIZADO...__
-
-#### - HTML
-#### - CSS
-#### - JavaScript
-#### - Git
-#### - GitHub
-#### - Figma
-
-#
-
-## [__Acesse meu perfil no Linkedin aqui__](https://www.linkedin.com/in/tthayza-oliveira/)
 

@@ -1,23 +1,21 @@
-# __Buttons and Cursors__ 🖱
-## __Sobre a Página__
-<br>
 
-#### O objetivo desenvolvido foi programar diferentes estados ao interagir com botões em integração com o cursor, como por exemplo:
-#### __Hover:__ quando o mouse é passado na área do botão;
-#### __Disabled:__ estado em que o mouse está quando desativado;
-#### __Focus:__ quando o botão é selecionado através do teclado;
-#### __Loading:__ estado em que o botão se encontra após o click;
+# <h1 style="text-align:center"> __#boraCodar Botões e Cursores__ 🖱</h1>
+
+#### <h3 style="text-align:center">O objetivo desenvolvido foi programar diferentes estados ao interagir com botões em integração com o cursor, como por exemplo: </h3>
+<p align="justify"> <strong>Hover:</strong> quando o mouse é passado na área do botão; <br></p>
+<p align="justify"><strong>Disabled:</strong> estado em que o mouse está quando desativado; <br></p>
+<p align="justify"><strong>Focus:</strong> quando o botão é selecionado através do teclado; <br></p>
+<p align="justify"><strong>Loading:</strong> estado em que o botão se encontra após o click; <br></p>
 
 #
 
-![preview](./preview.png)
+<p align="center">
+  <img src="preview.png">
+</p>
 
-## __NESSE PROJETO, FOI UTILIZADO...__
-- HTML
-- CSS
-- JavaScript
-- Git
-- GitHub
-- Figma
+#### <h3 style="text-align:center"> Esse projeto foi desenvolvido com </h3>
+### <p style="text-align:center"> __HTML | CSS | JavaScript | Git | GitHub | Figma__ </p>
 
-### [Acesse meu perfil no Linkedin aqui](https://www.linkedin.com/in/tthayza-oliveira/)
+<br>
+
+### <h2 style="text-align:center"> [Acesse meu perfil no Linkedin aqui](https://www.linkedin.com/in/tthayza-oliveira/) </h2>

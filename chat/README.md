@@ -1,23 +1,15 @@
-# __Chat 🗣__
+# <h1 style="text-align:center">__#boraCodar um Chat 🗣__</h1>
+#### <h3 style="text-align:center">O projeto desenvolvido é uma interface de chat, com a possibilidade de envio de mensagens. </h3>
 
-## __SOBRE A PÁGINA__
+#
+
+<p align="center">
+  <img src="preview.png">
+</p>
+
+#### <h3 style="text-align:center"> Esse projeto foi desenvolvido com </h3>
+### <p style="text-align:center"> __HTML | CSS | JavaScript | Git | GitHub | Figma__</p>
+
 <br>
 
-### O projeto desenvolvido é uma interface de chat, com a possibilidade de envio de mensagens. 
-
-#
-
-![preview](preview.png)
-
-## __NESSE PROJETO, FOI UTILIZADO...__
-
-#### - HTML
-#### - CSS
-#### - JavaScript
-#### - Git
-#### - GitHub
-#### - Figma
-
-#
-
-## [__Acesse meu perfil no Linkedin aqui__](https://www.linkedin.com/in/tthayza-oliveira/)
+### <h2 style="text-align:center"> [Acesse meu perfil no Linkedin aqui](https://www.linkedin.com/in/tthayza-oliveira/) </h2>
