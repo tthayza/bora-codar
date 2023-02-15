@@ -1,6 +1,6 @@
- <h1 style="text-align:center"><strong>#boraCodar 👩🏻‍🚀</strong></h1>
+ <h1 align="center"><strong>#boraCodar 👩🏻‍🚀</strong></h1>
 
-<h3 style="text-align:center">Esse repositório tem como objetivo armazenar os projetos semanais propostos pela RocketSeat no desafio #boraCodar. <br> Nesses desafios, tenho buscado realmente me desafiar e desenvolver meu aprendizado com JavaScript e React. 🚀 </h3>
+<h3 align="center">Esse repositório tem como objetivo armazenar os projetos semanais propostos pela RocketSeat no desafio #boraCodar. <br> Nesses desafios, tenho buscado realmente me desafiar e desenvolver meu aprendizado com JavaScript e React. 🚀 </h3>
 <br>
 <h2><strong>DESAFIOS FEITOS</strong></h2>
 
@@ -12,4 +12,4 @@
 
 
 
-<h2 style="text-align:center"><strong><a href="https://www.linkedin.com/in/tthayza-oliveira/">Acesse meu perfil no Linkedin aqui</a> </strong></h2>
+<h2 align="center"><strong><a href="https://www.linkedin.com/in/tthayza-oliveira/">Acesse meu perfil no Linkedin aqui</a> </strong></h2>
