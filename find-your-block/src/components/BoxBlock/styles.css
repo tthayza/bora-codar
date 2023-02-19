@@ -1,0 +1,40 @@
+.box-block {
+  width: 384px;
+  height: 323px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.img-content img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.block-message {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+.block-message h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--primary-color);
+}
+
+.block-message p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: rgba(0, 0, 0, 0.75);
+  align-items: center;
+}
+
+.local-box {
+  display: flex;
+  align-items: center;
+}

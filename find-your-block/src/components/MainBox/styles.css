@@ -1,0 +1,36 @@
+.main-box {
+  margin: 45px;
+  padding: 15px 45px 45px 45px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  padding: 8px;
+}
+
+.buttons button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 4px 24px;
+  width: 86px;
+  height: 32px;
+}
+
+.map {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+.blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 32px;
+}
