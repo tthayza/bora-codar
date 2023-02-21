@@ -1,6 +1,6 @@
- <h1 align="center"><strong>#boraCodar 👩🏻‍🚀</strong></h1>
+ <h1 align="center"><strong>#boraCodar Projetos Incríveis 👩🏻‍🚀✨</strong></h1>
 
-<h4 align="center">Esse repositório tem como objetivo armazenar os projetos semanais propostos pela RocketSeat no desafio #boraCodar. <br> Nesses desafios, tenho buscado realmente me desafiar e desenvolver meu aprendizado com JavaScript e React. 🚀 </h4>
+<h4 align="center">Esse repositório tem como objetivo armazenar os projetos semanais propostos pela RocketSeat no desafio #boraCodar. <br> Nesses desafios, tenho buscado realmente me desafiar e desenvolver meu aprendizado explorando JavaScript e React. 🚀 </h4>
 <br>
 <h2><strong>DESAFIOS FEITOS</strong></h2>
 
