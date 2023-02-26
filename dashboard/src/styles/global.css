@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+
+  --bg-color: #292738;
+  --boxes-bg-color: #363447;
+
+  line-height: 160%;
+}
+
+
