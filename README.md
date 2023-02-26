@@ -10,6 +10,6 @@
 #### - [<strong>Calculadora - 05</strong>](https://github.com/tthayza/bora-codar/tree/main/calculator)
 #### - [<strong>Cartão de Embarque - 06</strong>](https://github.com/tthayza/bora-codar/tree/main/boarding-pass)
 #### - [<strong>Encontre seu Bloco de Carnaval - 07</strong>](https://github.com/tthayza/bora-codar/tree/main/find-your-block)
-
+#### - [<strong>Darshboard de Vendas - 08</strong>](https://github.com/tthayza/bora-codar/tree/main/dashboard)
 
 <h2 align="center"><strong><a href="https://www.linkedin.com/in/tthayza-oliveira/">Acesse meu perfil no Linkedin aqui</a> </strong></h2>
