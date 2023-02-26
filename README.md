@@ -1,6 +1,6 @@
  <h1 align="center"><strong>#boraCodar Projetos Incríveis 👩🏻‍🚀✨</strong></h1>
 
-<h4 align="center">Esse repositório tem como objetivo armazenar os projetos semanais propostos pela RocketSeat no desafio #boraCodar. <br> Nesses desafios, tenho buscado realmente me desafiar e desenvolver meu aprendizado explorando JavaScript e React. 🚀 </h4>
+<h4 align="justify">Esse repositório tem como objetivo armazenar os projetos semanais propostos pela RocketSeat no desafio #boraCodar. <br> Nesses desafios, tenho buscado realmente me desafiar e desenvolver meu aprendizado explorando JavaScript e React. 🚀 </h4>
 <br>
 <h2><strong>DESAFIOS FEITOS</strong></h2>
 
@@ -10,7 +10,7 @@
 #### - [<strong>Calculadora - 05</strong>](https://github.com/tthayza/bora-codar/tree/main/calculator)
 #### - [<strong>Cartão de Embarque - 06</strong>](https://github.com/tthayza/bora-codar/tree/main/boarding-pass)
 #### - [<strong>Encontre seu Bloco de Carnaval - 07</strong>](https://github.com/tthayza/bora-codar/tree/main/find-your-block)
-#### - [<strong>Darshboard de Vendas - 08</strong>](https://github.com/tthayza/bora-codar/tree/main/dashboard)
+#### - [<strong>Dashboard de Vendas - 08</strong>](https://github.com/tthayza/bora-codar/tree/main/dashboard)
 
 
 <h2 align="center"><strong><a href="https://www.linkedin.com/in/tthayza-oliveira/">Acesse meu perfil no Linkedin aqui</a> </strong></h2>
