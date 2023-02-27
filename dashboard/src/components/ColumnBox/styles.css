@@ -5,11 +5,12 @@
   display: flex;
   padding: 2.9rem 4.8rem;
   border-radius: 1.6rem;
-  justify-content: space-between;
+  gap: 3rem;
 
   min-width: 77rem;
   height: fit-content;
 
+  align-items: center;
 
 }
 

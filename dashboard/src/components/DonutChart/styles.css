@@ -1,4 +1,85 @@
+
 .progress-bar {
-  width: 9.7rem;
-  height: 9.7rem;
+  width: 16rem;
+  height: 16rem;
+  position: relative;
+}
+
+.outer {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  padding: 2rem;
+
+
+  background-color: #4A4556;
+
+
+}
+
+.inner {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--boxes-bg-color);
+}
+
+#percent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+#percent h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+#percent p {
+  margin: 0.6rem;
+}
+
+.circle {
+  fill:none;
+  stroke: url(#GradientColor);
+  stroke-width: 2.2rem;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: anim 1.3s linear forwards;
+
+
+}
+
+.circle2 {
+  fill:none;
+  stroke: url(#GradientColor2);
+  stroke-width: 2rem;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: anim2 1.3s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 204 ;
+  }
+}
+
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 1045 ;
+  }
+}
+
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

@@ -13,7 +13,9 @@ function ColumnBox() {
         <p> <img src={RedTriangle} alt="" /> Dia com menos vendas</p>
         <h2>domingo</h2>
       </div>
-      <ColumnChart />
+      <div>
+        <ColumnChart />
+      </div>
     </div>
   )
 }
