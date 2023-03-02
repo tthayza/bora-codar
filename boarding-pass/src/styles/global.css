@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -11,11 +13,16 @@
   align-items: center;
   font-family: 'Rubik', sans-serif;
   color: white;
-  background-color: #8257e5;
-  /* background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%); */
+  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%) no-repeat
+  fixed;
   text-align: center;
   width: 100vw;
   height: 100vh;
+
+
+  --webkit-mask: var(--mask);
+  mask: var(--mask);
+
 }
 
 h2 {
@@ -39,3 +46,9 @@ h2 {
   margin-bottom: 20px;
 }
 
+footer {
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.64;
+  width: 270px;
+}

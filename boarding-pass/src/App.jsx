@@ -20,7 +20,9 @@ function App() {
 
 
       </div>
-      <p>Qualquer problema procure o balcão de atendimento da sua companhia aérea</p>
+      <footer>
+        <p>Qualquer problema procure o balcão de atendimento da sua companhia aérea</p>
+      </footer>
     </div>
   )
 }

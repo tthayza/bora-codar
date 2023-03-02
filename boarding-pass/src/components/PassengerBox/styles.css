@@ -1,3 +1,8 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .passenger-box {
   display: flex;
   justify-content: space-between;
@@ -6,6 +11,7 @@
   padding: 24px 0px;
   width: 327px;
   height: 84px;
+  --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, #0000 93%, black) -1.2rem -1.2rem;
 }
 
 .passenger-name {

@@ -3,6 +3,10 @@
   margin: 24px 0px;
   justify-content: space-between;
 
+  --mask: radial-gradient(1.2rem at 1.2rem top, #0000 93%, black) -1.2rem;
+  --webkit-mask-repeat: repeat-x;
+  --mask-repeat: repeat-x;
+
 }
 
 .infos {

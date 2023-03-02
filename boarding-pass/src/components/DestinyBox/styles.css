@@ -3,6 +3,11 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
+
+
+  --mask: radial-gradient(1.2rem at 1.2rem top, #0000 93%, black) -1.2rem;
+  --webkit-mask-repeat: repeat-x;
+  --mask-repeat: repeat-x;
 }
 
 .from {

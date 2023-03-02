@@ -1,3 +1,7 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .data-box {
   display: flex;
   justify-content: space-between;
