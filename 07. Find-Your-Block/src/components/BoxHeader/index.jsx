@@ -30,7 +30,6 @@ function BoxHeader() {
         </section>
       </div>
       <div className ="right-image">
-        <img src={rightimage} alt=""  className="custom-image"/>
       </div>
     </div>
   )
