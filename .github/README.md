@@ -7,7 +7,7 @@
 
 
 <p align="center">
-    <h3 align="center"><strong>DESAFIOS FEITOS</strong></h3> 
+    <h3 align="center"><strong>DESAFIOS FEITOS</strong></h3>
     <p align="center"><a href="https://boracodar.dev">Acesse o desafio desta semana clicando aqui</a><br></p>
     <br><table align="center">
     <thead >
@@ -71,6 +71,11 @@
             <td><strong>08</strong></td>
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/08.%20Dashboard"><strong>Dashboard de Vendas</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/08.png" /></a></td>
+        </tr>
+        <tr>
+            <td><strong>09</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/09.%20Currency-Converter"><strong>Conversor de Moedas</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/09.png" /></a></td>
         </tr>
     </tbody>
 </table></p>

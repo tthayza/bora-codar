@@ -1,0 +1,18 @@
+.box-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.title h1{
+  font-size: 2rem;
+  color: #0F172A;
+}
+
+.conversor {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+

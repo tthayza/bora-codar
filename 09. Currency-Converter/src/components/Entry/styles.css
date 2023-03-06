@@ -1,0 +1,32 @@
+.entry {
+  display: flex;
+  align-items: center;
+  border: solid #94A3B8 1.5px;
+  border-radius: 0.8rem;
+}
+
+.entry-base {
+  border: none;
+  height: 5rem;
+  border-radius: 0.8rem;
+  color:#1E1E1E;
+}
+
+
+.entry p {
+  color: #94A3B8;
+}
+
+.text {
+  max-width: 16rem;
+}
+/* .text:enabled {
+  border: #7c3aed 0.15rem solid;
+}
+.text:disabled {
+  border: 1px solid #94A3B8;
+} */
+
+.selection {
+  max-width: 13rem;
+}
