@@ -2,6 +2,7 @@ import DonutChart from "../DonutChart"
 import "./styles.css"
 
 function GraphBoxes(props) {
+
   return (
     <div className="graph-boxes">
 
@@ -14,13 +15,15 @@ function GraphBoxes(props) {
         </div>
         <div className="text-footer">
           <div className="first-text">
-            <div className="dot-default"></div>
-            <p>
-              Esperado {props.info1}
-            </p>
+            <div className={`dot`}>
+            </div>
+              <p>
+                Esperado {props.info1}
+              </p>
           </div>
           <div className="second-text">
-            <div className="dot-color"></div>
+            <div className={`dot ${props.graphColor == "blue" ? "sale" : "goal"}`}>
+            </div>
             <p>
               Alcançado {props.info2}
             </p>
