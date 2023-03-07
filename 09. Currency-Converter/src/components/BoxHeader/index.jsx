@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import "./styles.css"
-import replace from "../../assets/to-replace.svg"
 import Entry from "../Entry"
 function BoxHeader() {
   const [currencies, setCurrencies] = useState([])
@@ -35,7 +34,8 @@ function BoxHeader() {
   // }, [outputCurrency])
 
     useEffect(() => {
-      setOutputValue(inputValue * outputCurrency)
+      const result = inputValue * outputCurrency
+      setOutputValue(new Intl.NumberFormat({style: 'currency'}).format(result))
 
     }, [inputValue, outputCurrency])
 
@@ -57,9 +57,6 @@ function BoxHeader() {
           />
         </div>
 
-        <div className="to-replace-img">
-          <img src={replace} alt="" />
-        </div>
 
         <div className="destiny-currency">
           <Entry

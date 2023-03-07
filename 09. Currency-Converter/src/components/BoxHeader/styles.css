@@ -1,18 +1,61 @@
 .box-header {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 8rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
 }
 
-.title h1{
-  font-size: 2rem;
-  color: #0F172A;
+.title h1 {
+  font-size: 2.5rem;
+  color: rgb(48, 1, 15);
+  text-align: center;
 }
 
 .conversor {
   display: flex;
-  gap: 1.6rem;
+  gap: 3rem;
   align-items: center;
   justify-content: center;
 }
 
+@media screen and (min-width: 280px) and (max-width: 359px) {
+  .box-header {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    place-content: center;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+  .title h1 {
+    width: fit-content;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .conversor {
+    gap: 0.85rem;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 415px) {
+  .box-header {
+    gap: 4rem;
+  }
+  .title h1 {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 821px) {
+  .box-header {
+    gap: 5rem;
+
+  }
+
+  .title h1 {
+    font-size: 2.8rem;
+  }
+}

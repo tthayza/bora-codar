@@ -14,15 +14,18 @@ function Entry(props) {
         disabled={props.disabled}
       />
       <p> | </p>
-      <select
-        className="entry-base selection"
-        value={props.currencyValue}
-        onChange={(e) => props.setSelectedCurrency(e.target.value)}
-      >
-        {Object.entries(props.data).map(([key, value]) => {
-          return <option key={key} value={value}>{key}</option>
-        })}
-      </select>
+      <div className="box-select">
+        <select
+          className="entry-base selection"
+          value={props.currencyValue}
+          onChange={(e) => props.setSelectedCurrency(e.target.value)}
+        >
+          {Object.entries(props.data).map(([key, value]) => {
+            return <option key={key} value={value}>{key}</option>
+          })}
+        </select>
+      </div>
+
     </div>
   )
 }

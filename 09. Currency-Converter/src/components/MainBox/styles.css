@@ -1,13 +1,45 @@
 .main-box {
-  width: 60%;
-  height: 80%;
+  width: fit-content;
+  height: 60%;
 
   display: flex;
   flex-direction: column;
-  padding: 6rem 8rem;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
   gap: 6.4rem;
-  background:white;
+  background: rgb(242, 212, 212);
   box-shadow: 0px 4px 32px rgba(15, 23, 42, 0.15);
   border-radius: 1.6rem;
+}
 
+@media screen and (min-width: 280px) and (max-width: 359px) {
+  .main-box {
+    width: 92%;
+    height: 50%;
+    gap: 0rem 4rem;
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 415px) {
+  .main-box {
+    height: 38%;
+    width: 85%;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 821px) {
+  .main-box {
+    padding: 3rem;
+    height: 48%;
+  }
+}
+
+@media (width: 912px) {
+  .main-box {
+    padding: 3rem;
+    height: 25%;
+  }
 }
