@@ -1,6 +1,6 @@
 import ColumnChart from "../ColumnChart"
-import GreenTriangle from "../../assets/green-triangle.svg"
-import RedTriangle from "../../assets/red-triangle.svg"
+import GreenTriangle from "../../../assets/green-triangle.svg"
+import RedTriangle from "../../../assets/red-triangle.svg"
 import "./styles.css"
 
 function ColumnBox() {

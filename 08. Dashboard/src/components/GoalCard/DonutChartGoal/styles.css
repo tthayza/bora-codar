@@ -1,0 +1,79 @@
+
+.progress-bar {
+
+  display: grid;
+  place-content: center;
+}
+
+svg {
+  width: 19.7rem;
+  height: 19.7rem;
+  transform: rotate(-90deg);
+}
+
+svg circle {
+  fill:none;
+  stroke-width: 30;
+  stroke-dasharray: 618;
+}
+
+.circle-goal {
+  stroke-dashoffset: calc(618 - (618 * 90) / 100);
+}
+
+
+/* #percent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#percent h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+#percent p {
+  margin: 0.6rem;
+} */
+
+
+
+/* @keyframes anim {
+  100% {
+    stroke-dashoffset: 204 ;
+  }
+}
+
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 1045 ;
+  }
+} */
+
+
+
+
+
+/* .outer {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  padding: 2rem;
+
+
+  background-color: #4A4556;
+
+
+}
+
+.inner {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--boxes-bg-color);
+} */

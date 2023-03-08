@@ -1,0 +1,82 @@
+
+.progress-bar {
+
+  display: grid;
+  place-content: center;
+}
+
+svg {
+  width: 19.7rem;
+  height: 19.7rem;
+}
+
+.circle-sale {
+  stroke-dashoffset: calc(618 - (618 * 70) /100);
+}
+
+
+/* .saleGraph{
+  stroke: url(.GradientColor);
+  animation: anim 1.3s linear forwards;
+}
+
+.goalGraph {
+  stroke: url(.GradientColor1);
+  animation: anim2 1.3s linear forwards;
+} */
+
+/* #percent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#percent h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+#percent p {
+  margin: 0.6rem;
+} */
+
+
+
+/* @keyframes anim {
+  100% {
+    stroke-dashoffset: 204 ;
+  }
+}
+
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 1045 ;
+  }
+} */
+
+
+
+
+
+/* .outer {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  padding: 2rem;
+
+
+  background-color: #4A4556;
+
+
+}
+
+.inner {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--boxes-bg-color);
+} */

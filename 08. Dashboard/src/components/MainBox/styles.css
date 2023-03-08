@@ -10,10 +10,13 @@
   justify-content: center;
   align-items: center;
   padding: 1.12rem 1.23rem;
-  gap: 5.9rem;
+  gap: 3.9rem;
 }
 
 .header-box {
   display: flex;
   gap: 3.2rem;
+  justify-content: center;
 }
+
+
