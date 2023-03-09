@@ -7,6 +7,7 @@
 :root {
   font-size: 62.5%;
   font-family: 'Inter', sans-serif;
+  background-color: #292738;
 
   --bg-color: #292738;
   --boxes-bg-color: #363447;
@@ -14,4 +15,123 @@
   line-height: 160%;
 }
 
+.grid {
+  display: grid;
+  place-content: center;
+}
+.app {
+  background-color: var(--bg-color);
+  color: white;
+  column-gap: 3.2rem;
+  row-gap: 5.9rem;
 
+  width: fit-content;
+  min-height: 100vh;
+  height: fit-content;
+
+  margin: auto;
+
+  place-content: center;
+  padding: 3.2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--boxes-bg-color);
+  border-radius: 1.6rem;
+  padding: 2.9rem 4.8rem;
+  box-shadow: 3px 4px 26px rgba(0, 0, 0, 0.25);
+  line-height: 160%;
+  text-align: center;
+
+  gap: 3.2rem;
+}
+.title {
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.middle {
+
+  position: relative;
+  gap: 1.6rem;
+  justify-items: center;
+}
+
+.text-footer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-top: auto;
+}
+
+.dot {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-color: #4a4556;
+  border-radius: 50%;
+}
+
+
+.text-footer .text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.text-footer p {
+  margin: 0;
+}
+
+.progress-bar {
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.progress-bar svg {
+  width: 19.7rem;
+  height: 19.7rem;
+  transform: rotate(-90deg);
+}
+
+.progress-bar svg circle {
+  fill: none;
+  stroke-width: 35;
+  stroke-dasharray: 618;
+  stroke-linecap: round;
+}
+
+.progress-bar .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 3.4rem;
+}
+
+.content p {
+  margin-top: 0.7rem;
+}
+
+
+@media screen and (min-width: 1000px) {
+  #app {
+    grid-template-columns: max-content max-content max-content;
+    grid-template-rows: max-content;
+  }
+  .column {
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

@@ -3,22 +3,22 @@ import "./styles.css"
 
 function SaleCard(props) {
   return(
-    <div className="container">
+    <div className="card">
       <div className="title">
         <h3>Vendas fechadas</h3>
       </div>
-      <div className="graph">
+      <div className="middle grid">
           <DonutChartSale percent="70"/>
       </div>
-      <div className="text-footer-sale">
-        <div className="first-text">
+      <div className="text-footer">
+        <div className="text">
           <div className="dot ">
           </div>
             <p>
               Esperado {props.info1}
             </p>
         </div>
-        <div className="second-text">
+        <div className="text">
           <div className="dot sale"  style={{backgroundColor: "#ce9ffc"}}>
           </div>
           <p>

@@ -1,17 +1,7 @@
-.progress-bar {
-  display: grid;
-  place-content: center;
-}
-
-svg {
-  width: 19.7rem;
-  height: 19.7rem;
-}
 
 .circle-sale {
   animation: animate-sale 1.2s;
 }
-
 
 @keyframes animate-sale {
   0% {

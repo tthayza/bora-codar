@@ -6,14 +6,14 @@ import "./styles.css"
 function DonutChartSale(props) {
   const [number, setNumber] = useState(0);
 
-  // useEffect(() => {
-  //   if (number < props.limit){
-  //     const intervalo = setInterval(() => {
-  //       setNumber(prev => prev + 1)
-  //     }, 15);
-  //     return () => clearInterval(intervalo);
-  //   }
-  // }, [number]);
+  useEffect(() => {
+    if (number < props.percent){
+      const intervalo = setInterval(() => {
+        setNumber(prev => prev + 1)
+      }, 5);
+      return () => clearInterval(intervalo);
+    }
+  }, [number]);
 
 
   return (

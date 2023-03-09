@@ -6,14 +6,15 @@ import "./styles.css"
 function DonutChartGoal(props) {
   const [number, setNumber] = useState(0);
 
-  // useEffect(() => {
-  //   if (number < props.limit){
-  //     const intervalo = setInterval(() => {
-  //       setNumber(prev => prev + 1)
-  //     }, 15);
-  //     return () => clearInterval(intervalo);
-  //   }
-  // }, [number]);
+  useEffect(() => {
+    if (number < props.percent){
+      const intervalo = setInterval(() => {
+        setNumber(prev => prev + 1)
+      }, 5);
+      return () => clearInterval(intervalo);
+    }
+  }, [number]);
+  console.log(number)
 
 
 
@@ -34,7 +35,7 @@ function DonutChartGoal(props) {
             cy="50%"
             r="98.5"
             stroke="url(#paint0_linear_201_104)"
-            strokeDashoffset={618 -(618 * props.percent) / 100}
+            strokeDashoffset={618 - (618 * props.percent) / 100}
         />
 
         <defs>

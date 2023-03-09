@@ -1,7 +1,4 @@
-import Card from "../NPSCard"
-import SaleCard from "../SaleCard"
-import GoalCard from "../GoalCard"
-import ColumnBox from "../WeeklySales/ColumnBox"
+
 import "./styles.css"
 
 function MainBox() {

@@ -36,12 +36,12 @@
   width: 100%;
 }
 */
- .text-footer-sale {
+ /* .text-footer-sale {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
+} */
 
 .first-text,
 .second-text {
@@ -55,8 +55,3 @@
   background-color: #ce9ffc;
 }
 
-.text-footer-sale p {
-  font-weight: 500;
-  font-size: 1rem;
-  margin: 0;
-}

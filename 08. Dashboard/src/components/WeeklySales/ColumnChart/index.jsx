@@ -2,9 +2,9 @@ import "./styles.css"
 function ColumnChart() {
   return (
     <div className="container-graph">
-      <section>
+      <div>
         <div className="grid-line" value="50%"></div>
-      </section>
+      </div>
       <section className="bar-container">
         <div className="bar">
           <div className="column-bar" style={{maxHeight: 20}}></div>

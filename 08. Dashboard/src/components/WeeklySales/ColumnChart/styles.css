@@ -1,7 +1,7 @@
 .container-graph {
   width: 42rem;
   height: 13rem;
-  /* position: static; */
+
 }
 
 .grid-line {
@@ -12,6 +12,7 @@
 
   background: #4A4556;
   border-radius: 99rem;
+  z-index: 0;
 }
 
 .bar-container {
@@ -28,6 +29,8 @@
   height: 100%;
   background-image: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
   border-radius: 99rem;
+  z-index: 1;
+  animation: up 1s;
 }
 
 
@@ -41,4 +44,15 @@
 .day {
   font-size: 1rem;
   margin-top: 0.5rem;
+}
+
+@keyframes up {
+  0% {
+    height: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .bar-container {
+    flex: 1;
+  }
 }

@@ -5,7 +5,6 @@ import "./styles.css"
 
 function ColumnBox() {
   return (
-    <div className="column-box">
       <div className="text-box">
         <h1>Vendas por dia da semana</h1>
         <p> <img src={GreenTriangle} alt="" />  Dias com mais vendas</p>
@@ -13,10 +12,6 @@ function ColumnBox() {
         <p> <img src={RedTriangle} alt="" /> Dia com menos vendas</p>
         <h2>domingo</h2>
       </div>
-      <div>
-        <ColumnChart />
-      </div>
-    </div>
   )
 }
 
