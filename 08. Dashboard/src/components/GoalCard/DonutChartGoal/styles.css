@@ -1,11 +1,13 @@
 
 .progress-bar {
-
   display: grid;
   place-content: center;
+  position: relative;
+
 }
 
 svg {
+  --percentage: 0;
   width: 19.7rem;
   height: 19.7rem;
   transform: rotate(-90deg);
@@ -13,12 +15,36 @@ svg {
 
 svg circle {
   fill:none;
-  stroke-width: 30;
+  stroke-width: 35;
   stroke-dasharray: 618;
+  stroke-linecap: round;
+}
+
+.progress-bar .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .circle-goal {
-  stroke-dashoffset: calc(618 - (618 * 90) / 100);
+  animation: animate-goal 1.2s;
+}
+
+.content h3 {
+  font-size: 3.4rem;
+}
+
+.content p {
+  margin-top: 0.7rem;
+}
+
+@keyframes animate-goal {
+  0% {
+    stroke-dashoffset: 618;
+    stroke-dasharray: 618;
+  }
 }
 
 
@@ -39,12 +65,8 @@ svg circle {
 
 
 
-/* @keyframes anim {
-  100% {
-    stroke-dashoffset: 204 ;
-  }
-}
 
+/*
 @keyframes anim2 {
   100% {
     stroke-dashoffset: 1045 ;

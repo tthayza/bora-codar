@@ -34,6 +34,7 @@ function DonutChartGoal(props) {
             cy="50%"
             r="98.5"
             stroke="url(#paint0_linear_201_104)"
+            strokeDashoffset={618 -(618 * props.percent) / 100}
         />
 
         <defs>
@@ -50,15 +51,11 @@ function DonutChartGoal(props) {
           </linearGradient>
         </defs>
       </svg>
-      {/*
-          <div id="percent">
-            <div>
-              <h1>
-                {number}%
-              </h1>
-            </div>
-            <p>alcançada</p>
-          </div> */}
+
+      <div className="content goals">
+          <h3> {number}% </h3>
+          <p> alcançada </p>
+      </div>
     </div>
   )
 }

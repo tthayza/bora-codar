@@ -3,12 +3,12 @@ import "./styles.css"
 
 function SaleCard(props) {
   return(
-    <div className="container" style={{'--percentage': props.percent}}>
+    <div className="container">
       <div className="title">
         <h3>Vendas fechadas</h3>
       </div>
       <div className="graph">
-          <DonutChartSale />
+          <DonutChartSale percent="70"/>
       </div>
       <div className="text-footer-sale">
         <div className="first-text">

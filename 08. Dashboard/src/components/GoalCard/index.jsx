@@ -8,7 +8,7 @@ function GoalCard(props) {
         <h3>Meta mensal</h3>
       </div>
       <div className="graph">
-          <DonutChartGoal  />
+          <DonutChartGoal  percent="90"/>
       </div>
       <div className="text-footer-goals">
         <div className="first-text">

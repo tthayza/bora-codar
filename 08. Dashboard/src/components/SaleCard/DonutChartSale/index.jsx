@@ -19,7 +19,7 @@ function DonutChartSale(props) {
   return (
 
     <div className="progress-bar">
-      <svg viewBox="0 0 225 225">
+      <svg viewBox="0 0 232 232">
         <circle
             cx="50%"
             cy="50%"
@@ -33,6 +33,7 @@ function DonutChartSale(props) {
             cy="50%"
             r="98.5"
             stroke="url(#paint0_linear_201_85)"
+            strokeDashoffset={618 -(618 * props.percent) / 100}
         />
 
         <defs>
@@ -49,15 +50,10 @@ function DonutChartSale(props) {
           </linearGradient>
         </defs>
       </svg>
-      {/*
-          <div id="percent">
-            <div>
-              <h1>
-                {number}%
-              </h1>
-            </div>
-            <p>alcançada</p>
-          </div> */}
+      <div className="content sales">
+          <h3> {number}% </h3>
+          <p> alcançada </p>
+      </div>
     </div>
   )
 }
