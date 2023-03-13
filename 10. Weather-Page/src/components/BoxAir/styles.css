@@ -1,0 +1,50 @@
+.box-air {
+  /* border: solid 4px lawngreen; */
+  padding: 3.2rem 6.6rem 1.6rem;
+
+  width: 78%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.title {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  color: #DAD8F7;
+}
+
+.middle {
+  font-weight: 700;
+  text-align: center;
+}
+
+.middle, .substances-in-air h2{
+  color: #87EBCD;
+  font-size: 1.8rem;
+}
+
+.middle h1 {
+  color: #E7E6FB;
+  font-size: 4rem;
+}
+
+.footer{
+  display: flex;
+  gap: 1.6rem;
+  text-align: center;
+}
+
+.substances-in-air h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.substances-in-air p {
+  color: #E7E6FB;
+  font-size: 1.2rem;
+  font-weight: 400;
+}

@@ -1,0 +1,106 @@
+.box-now {
+  /* border: solid 4px crimson; */
+
+  background-image: url(../../assets/Background-box.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 1rem;
+  /* backdrop-filter: blur(10px); */
+
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.local {
+  width: 100%;
+  height: fit-content;
+  padding: 3rem
+}
+
+.local p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  color: #C2BFF4;
+}
+
+.temperature {
+  /* border: solid 1px lightsalmon; */
+
+  display: flex;
+  flex-direction: column;
+
+  align-self: center;
+  margin-top: 6rem;
+}
+
+.now-temperature {
+  display: flex;
+
+  /* border: 1px solid #228b22; */
+}
+.now-temperature h4, .max-and-min span {
+  color:#DAD8F7;
+}
+
+.temperature h1 {
+  text-align: center;
+  font-size: 8.8rem;
+}
+
+.temperature h4 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 3;
+}
+
+.max-and-min p, span {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.weather-factors {
+  display: flex;
+  gap: 0.8rem;
+  width: 100%;
+  
+
+  margin: auto 1.2rem 1.2rem;
+}
+
+.factor-box {
+  background: rgba(102, 96, 200, 0.6);
+  border-radius: 0.6rem;
+  width: 50%;
+
+  padding: 0.5rem 1.6rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+
+.factor-box p, h2 {
+  color: #E7E6FB;
+}
+
+
+.factor-info span {
+  color:#DAD8F7;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.factor-box p {
+  font-weight: 400;
+}
+
+.factor-info h2 {
+  font-size: 1.8rem;
+}

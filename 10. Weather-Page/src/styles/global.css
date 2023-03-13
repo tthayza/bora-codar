@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.app {
+  background-image: url(../assets/Background-app.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+}
+
+.box {
+  margin: 0;
+  background-color: #6D67D0;
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+}
+
+p {
+  font-weight: 700;
+}
