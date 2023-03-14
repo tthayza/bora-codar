@@ -4,6 +4,7 @@ import windIcon from "../../assets/wind-icon.svg"
 import moistureIcon from "../../assets/moisture-icon.svg"
 import rainIcon from "../../assets/rain-icon.svg"
 
+
 function BoxNow(props) {
   return(
     <div className="box-now flex">
@@ -12,11 +13,12 @@ function BoxNow(props) {
       </div>
       <div className="temperature ">
         <div className="now-temperature">
-          <h1> 44</h1>
+          <h1>{props.weatherInfo?.current_weather?.temperature}</h1>
           <h4>°C</h4>
         </div>
         <div className="max-and-min">
-          <p>22º <span>16º</span></p>
+          <p> {props.max}º
+          <span>  | {props.min}º</span></p>
         </div>
       </div>
       <div className="weather-factors flex">
@@ -26,7 +28,7 @@ function BoxNow(props) {
           </div>
           <div className="factor-info">
             <p>Vento</p>
-            <h2>17 <span>km/h</span></h2>
+            <h2>{props.weatherInfo?.current_weather?.windspeed} <span>km/h</span></h2>
           </div>
         </div>
         <div className="moisture factor-box">
@@ -35,7 +37,7 @@ function BoxNow(props) {
           </div>
           <div className="factor-info">
             <p>Umidade</p>
-            <h2>31 <span>%</span></h2>
+            <h2> {props.weatherInfo?.hourly?.relativehumidity_2m[props.parameterIndex]}<span>%</span></h2>
           </div>
 
         </div>
@@ -45,7 +47,7 @@ function BoxNow(props) {
           </div>
           <div className="factor-info">
             <p>Chuva</p>
-            <h2>10 <span>%</span></h2>
+            <h2>{props.weatherInfo?.hourly?.precipitation_probability[props.parameterIndex]} <span>%</span></h2>
           </div>
         </div>
       </div>

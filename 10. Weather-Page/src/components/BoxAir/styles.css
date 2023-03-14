@@ -1,11 +1,10 @@
 .box-air {
   /* border: solid 4px lawngreen; */
-  padding: 3.2rem 2.6rem 1.6rem;
+  padding: 3.2rem 7rem 1.6rem;
 
-  width: 50%;
   flex-direction: column;
 
-  gap: 3rem;
+  gap: 4rem;
   height: 100%;
 
 }
@@ -32,7 +31,7 @@
 
 .footer{
   display: flex;
-  gap: 1.6rem;
+  gap: 1.8rem;
   text-align: center;
 }
 

@@ -3,13 +3,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+
   border-radius: 1rem;
 
-  width: 100%;
+  width: 46rem;
   height: 100%;
 
   flex-direction: column;
-  padding: 1.2rem;
+  padding: 1rem;
 }
 
 .local {
@@ -51,13 +52,13 @@
   line-height: 3;
 }
 
-.max-and-min p, span {
+.max-and-min p, .max-and-min span {
   text-align: center;
   font-size: 2rem;
 }
 
 .weather-factors {
-  gap: 0.8rem;
+  gap: 1rem;
   width: 100%;
 
   margin-top: auto;
