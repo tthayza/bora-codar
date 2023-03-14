@@ -1,3 +1,34 @@
-/* .weather-week {
-  /* border: solid 4px fuchsia; 
-} */
+.weather-week {
+   width: 100%;
+   height: 100%;
+   gap: 4rem;
+   padding: 4rem;
+   justify-content: center;
+}
+
+.weather-day {
+  flex-direction: column;
+  gap: 1.6rem;
+
+  width: fit-content;
+  height: fit-content;
+
+  text-align: center;
+  font-weight: 700;
+}
+
+.weather-day h3 {
+  color: #DAD8F7;
+}
+
+.weather-day h3 {
+  font-size: 1.4rem;
+}
+
+.weather-day p, span {
+  font-size: 1.6rem;
+}
+
+.weather-day span {
+  color: #C2BFF4;
+}

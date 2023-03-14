@@ -1,8 +1,12 @@
 .sunset-historic {
-  /* border: solid 4px teal; */
-
   width: 100%;
   height: 100%;
 
-  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 3.2rem 2.6rem 1.6rem;
+}
+
+.chart {
+  margin: 2.4rem 1.6rem 1.6rem;
 }

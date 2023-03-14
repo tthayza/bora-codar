@@ -3,8 +3,8 @@ import leaf from "../../assets/leaf-icon.svg"
 
 function BoxAir() {
   return(
-    <div className="box-air box">
-      <div className="title">
+    <div className="box-air box flex">
+      <div className="title flex">
         <div>
           <img src={leaf} alt="" />
         </div>

@@ -10,16 +10,19 @@
   color: white;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 .app {
   background-image: url(../assets/Background-app.png);
   background-size: cover;
   width: 100vw;
   height: 100vh;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 10rem;
+  justify-content: center;
 }
 
 .box {

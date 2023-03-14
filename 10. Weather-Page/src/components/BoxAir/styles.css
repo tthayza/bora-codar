@@ -1,19 +1,17 @@
 .box-air {
   /* border: solid 4px lawngreen; */
-  padding: 3.2rem 6.6rem 1.6rem;
+  padding: 3.2rem 2.6rem 1.6rem;
 
-  width: 78%;
-  display: flex;
+  width: 50%;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   gap: 3rem;
+  height: 100%;
+
 }
 
 .title {
-  display: flex;
   gap: 0.8rem;
-  align-items: center;
   color: #DAD8F7;
 }
 

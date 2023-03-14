@@ -1,25 +1,21 @@
 .box-now {
-  /* border: solid 4px crimson; */
-
   background-image: url(../../assets/Background-box.png);
   background-repeat: no-repeat;
   background-size: cover;
 
   border-radius: 1rem;
-  /* backdrop-filter: blur(10px); */
-
 
   width: 100%;
   height: 100%;
-  display: flex;
+
   flex-direction: column;
-  align-items: center;
+  padding: 1.2rem;
 }
 
 .local {
   width: 100%;
   height: fit-content;
-  padding: 3rem
+  padding: calc(3rem - 1.2rem) ;
 }
 
 .local p {
@@ -32,20 +28,14 @@
 }
 
 .temperature {
-  /* border: solid 1px lightsalmon; */
-
-  display: flex;
   flex-direction: column;
-
-  align-self: center;
   margin-top: 6rem;
 }
 
 .now-temperature {
   display: flex;
-
-  /* border: 1px solid #228b22; */
 }
+
 .now-temperature h4, .max-and-min span {
   color:#DAD8F7;
 }
@@ -67,12 +57,10 @@
 }
 
 .weather-factors {
-  display: flex;
   gap: 0.8rem;
   width: 100%;
-  
 
-  margin: auto 1.2rem 1.2rem;
+  margin-top: auto;
 }
 
 .factor-box {
@@ -85,11 +73,9 @@
   gap: 1.2rem;
 }
 
-
 .factor-box p, h2 {
   color: #E7E6FB;
 }
-
 
 .factor-info span {
   color:#DAD8F7;
