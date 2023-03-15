@@ -77,6 +77,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/09.%20Currency-Converter"><strong>Conversor de Moedas</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/09.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>10</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/10.%20Weather-Page"><strong>Página de Clima</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/10.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
