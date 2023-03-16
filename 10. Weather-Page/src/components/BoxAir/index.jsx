@@ -28,31 +28,15 @@ function BoxAir(props) {
   const parameterIndexAir = (airInfo?.hourly?.time)?.indexOf(props.currentDate)
 
   const airQuality = airInfo.hourly.european_aqi[parameterIndexAir]
-  let airQualityText = ""
-  switch (airQuality) {
-    case (airQuality <= 20 ):
-      airQualityText = "Boa"
-      break;
-    case (airQuality <= 40):
-      airQualityText = "Razoável"
-      break;
-    case (airQuality <= 60):
-      airQualityText = "Moderado"
-      break;
-    case (airQuality <= 80 ):
-      airQualityText = "Ruim"
-      break;
-    case (airQuality <= 100):
-      airQualityText = "Muito ruim"
-      break;
-    default:
-      airQualityText = "Extremamente precário"
-      break;
+
+  const checkingQuality = (value) => {
+    if (value <= 20 ) return "Boa"
+    if (value <= 40) return "Razoável"
+    if (value <= 60) return "Moderado"
+    if (value <= 80 ) return "Ruim"
+    if (value <= 100) return "Muito ruim"
+    return "Extremamente precário"
   }
-
-  console.log(parameterIndexAir)
-  console.log(airQualityText)
-
 
   return(
     <div className="box-air box flex">
@@ -63,7 +47,7 @@ function BoxAir(props) {
         <h2>Qualidade do ar</h2>
       </div>
       <div className="middle">
-        <p>{airQualityText}</p>
+        <p>{checkingQuality(airQuality)}</p>
         <h1>{airInfo?.hourly?.european_aqi[parameterIndexAir]}</h1>
       </div>
       <div className="footer">
