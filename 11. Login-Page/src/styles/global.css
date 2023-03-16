@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --strongColor: #4E0411;
+  --darkLightLetter: #80041E;
+  --forgetPassword: #CE043D;
+
+  font-size: 62.5%;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Titillium Web', sans-serif;
+
+
+
+
+  display: flex;
+}
+
+.left {
+  background-color: #F2D4D4;
+  width: 50%;
+  height: 100vh;
+
+  /* padding-top: 4rem; */
+}
+.right {
+  width: 50%;
+  height: 100vh;
+
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
