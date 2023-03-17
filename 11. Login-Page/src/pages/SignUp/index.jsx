@@ -1,7 +1,10 @@
 function SignUp() {
   return (
-    <div className="sign-in">
-
+    <div className="sign-up">
+      <label htmlFor=""></label>
+      <input type="text"  id="" />
+      <label htmlFor=""></label>
+      <input type="text"  id="" />
     </div>
   )
 }

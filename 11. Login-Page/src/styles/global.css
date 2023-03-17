@@ -17,9 +17,6 @@
   height: 100vh;
   font-family: 'Titillium Web', sans-serif;
 
-
-
-
   display: flex;
 }
 
@@ -28,8 +25,40 @@
   width: 50%;
   height: 100vh;
 
-  /* padding-top: 4rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* border: red solid 4px; */
 }
+
+.title {
+  margin: 4rem;
+  display: flex;
+  width: 65%;
+  gap: 0.5rem;
+}
+
+.title h1 {
+  font-size: 4rem;
+}
+
+.text {
+  margin-bottom: 4rem;
+}
+
+.text h1 {
+  color: var(--strongColor);
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem
+}
+
+.text p {
+  color: var(--darkLightLetter);
+  font-size: 1.6rem;
+}
+
+
 .right {
   width: 50%;
   height: 100vh;
