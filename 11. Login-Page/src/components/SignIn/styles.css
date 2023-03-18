@@ -5,15 +5,10 @@
   width: 100%;
 }
 
-
-.entry-box {
-  display: flex;
-  width: 65%;
-}
-
 .entry-box {
   display: flex;
   flex-direction: column;
+  width: 65%;
 }
 
 .entry-box label, p  {
@@ -26,37 +21,24 @@
   text-decoration: none;
 }
 
-.entry-box input {
-  width: 100%;
-  height: 5rem;
-  background-color: whitesmoke;
-  border: 0.1rem solid #E2E8F0;
-  border-radius: 0.5rem;
-
-  padding: 1.6rem 1.2rem;
-  margin-top: 0.8rem;
-}
-
 .entry-box input:hover,
 .entry-box input:focus{
   outline-color: #80041E;
   border-color: #80041E;
-  cursor: pointer;
 }
 
-.password {
+.password-text {
   display: flex;
   justify-content: space-between;
   margin-top: 1.6rem;
 }
 
-.password p {
+.password-text p {
   color: rgba(206, 4, 61, 0.8);
 }
 
-.password p:hover,
+.password-text p:hover,
 .footer a:hover {
-  cursor: pointer;
   text-decoration: underline;
 }
 

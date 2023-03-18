@@ -10,12 +10,13 @@
   --forgetPassword: #CE043D;
 
   font-size: 62.5%;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .app {
   width: 100vw;
   height: 100vh;
-  font-family: 'Titillium Web', sans-serif;
+
 
   display: flex;
 }
@@ -67,4 +68,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.input-value {
+  width: 100%;
+  height: 5rem;
+  background-color: whitesmoke;
+  border: 0.1rem solid #E2E8F0;
+  border-radius: 0.5rem;
+
+  padding: 1.6rem 1.2rem;
+  margin-top: 0.8rem;
 }

@@ -1,0 +1,14 @@
+.password-entry {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 40%;
+  right: 1%;
+}
+
+.icon:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}

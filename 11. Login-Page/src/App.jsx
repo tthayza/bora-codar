@@ -1,6 +1,5 @@
 import logo from "./assets/logo.svg"
-import SignIn from "./pages/SignIn"
-import SignUp from "./pages/SignUp"
+import SignIn from "./components/SignIn"
 import "./styles/global.css"
 function App() {
 
