@@ -3,8 +3,7 @@ import BoxNow from "../BoxNow"
 import SunsetHistoric from "../SunsetHistoric"
 import WeatherWeek from "../WeatherWeek"
 import "./styles.css"
-import whiteCloud from "../../assets/cloud.svg"
-import grayCloud from "../../assets/cloud-gray.svg"
+
 import { useEffect, useState } from "react"
 
 function MainBox() {
@@ -46,12 +45,7 @@ function MainBox() {
 
   return(
     <div className="main-box">
-      <div className="cloud-img first">
-        <img src={whiteCloud} alt="" />
-      </div>
-      <div className="cloud-img second">
-        <img src={grayCloud} alt="" />
-      </div>
+    
       <div className="left ">
         <div>
           <BoxNow weatherInfo={weatherInfo} parameterIndex={parameterIndex} max={max} min={min}/>

@@ -17,6 +17,7 @@
 
 .app {
   background-image: url(../assets/Background-app.png);
+  background-position: center;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -24,6 +25,8 @@
   padding: 10rem;
   justify-content: center;
 }
+
+
 
 .box {
   margin: 0;
@@ -35,3 +38,23 @@
 p {
   font-weight: 700;
 }
+
+/* @media (min-width: 200px)  {
+  html {
+    height: 100vh;
+    background-image: url(../assets/Background-app.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+  }
+  .app {
+    width: 100vw;
+    height: 100vh;
+    background-image: none;
+  }
+
+  .content{
+    width: 65rem;
+  }
+} */

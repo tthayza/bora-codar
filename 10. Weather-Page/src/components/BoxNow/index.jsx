@@ -7,7 +7,7 @@ import rainIcon from "../../assets/rain-icon.svg"
 
 function BoxNow(props) {
   return(
-    <div className="box-now flex">
+    <div className="box-now flex content">
       <div className="local">
         <p> <img src={icon} alt="ícone de local"/>Florianópolis</p>
       </div>

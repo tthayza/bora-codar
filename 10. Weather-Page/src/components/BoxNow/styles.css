@@ -11,6 +11,18 @@
 
   flex-direction: column;
   padding: 1rem;
+  position: relative;
+}
+
+.box-now::before {
+  content: "";
+  width: 17rem;
+  height: 17rem;
+  background-image: url(../../assets/clouds.svg);
+
+  position: absolute;
+  top: -5.6rem;
+  left: -5.6rem;
 }
 
 .local {

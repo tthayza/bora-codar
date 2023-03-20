@@ -4,7 +4,7 @@ import chartSun from "../../assets/chart.svg"
 
 function SunsetHistoric() {
   return(
-    <div className="sunset-historic box flex">
+    <div className="sunset-historic box flex content">
       <div className="title flex">
         <div >
           <img src={sunIcon} alt="ícone de sol com relógio" />

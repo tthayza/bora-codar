@@ -39,7 +39,7 @@ function BoxAir(props) {
   }
 
   return(
-    <div className="box-air box flex">
+    <div className="box-air box flex content">
       <div className="title flex">
         <div>
           <img src={leaf} alt="" />
