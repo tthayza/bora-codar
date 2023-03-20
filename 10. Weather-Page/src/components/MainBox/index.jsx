@@ -45,9 +45,9 @@ function MainBox() {
 
   return(
     <div className="main-box">
-    
+
       <div className="left ">
-        <div>
+        <div className="main-left">
           <BoxNow weatherInfo={weatherInfo} parameterIndex={parameterIndex} max={max} min={min}/>
         </div>
       </div>

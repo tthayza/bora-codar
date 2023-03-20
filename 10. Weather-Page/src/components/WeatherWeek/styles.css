@@ -32,3 +32,10 @@
 .weather-day span {
   color: #C2BFF4;
 }
+
+@media screen and (min-width: 200px) and (max-width: 1150px) {
+  .weather-week {
+    flex-direction: column;
+  }
+
+}

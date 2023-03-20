@@ -39,8 +39,9 @@ p {
   font-weight: 700;
 }
 
-/* @media (min-width: 200px)  {
+ @media screen and (min-width: 200px) and (max-width: 1150px) {
   html {
+    width: 100vw;
     height: 100vh;
     background-image: url(../assets/Background-app.png);
     background-attachment: fixed;
@@ -55,6 +56,15 @@ p {
   }
 
   .content{
-    width: 65rem;
+    width: 68%;
   }
-} */
+  .flex {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .content {
+    width: 100%;
+  }
+}
