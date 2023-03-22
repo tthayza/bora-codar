@@ -1,8 +1,9 @@
 .box-air {
-  /* border: solid 4px lawngreen; */
-  padding: 3.2rem 7rem 1.6rem;
+  padding: 3.2rem 2.5rem 1.6rem;
 
   flex-direction: column;
+
+  width: 50%;
 
   gap: 4rem;
   height: 100%;

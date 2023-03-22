@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
@@ -26,8 +28,6 @@
   justify-content: center;
 }
 
-
-
 .box {
   margin: 0;
   background-color: #6D67D0;
@@ -47,20 +47,20 @@ p {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
   }
   .app {
     width: 100vw;
     height: 100vh;
-    background-image: none;
   }
 
   .content{
-    width: 68%;
+    width: 100%;
   }
   .flex {
     justify-content: center;
   }
+
 }
 
 @media screen and (min-width: 540px) {

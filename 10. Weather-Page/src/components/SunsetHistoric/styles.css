@@ -1,12 +1,102 @@
 .sunset-historic {
-  width: 100%;
+  width: 50%;
   height: 100%;
 
   flex-direction: column;
-  flex: 1;
-  padding: 3.2rem 2.6rem 1.6rem;
+  padding: 2rem;
+}
+
+.sun-chart-wrapper {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-top: 4rem;
+  height: 11rem;
+}
+
+.sun-chart {
+  --pos-x: 80;
+
+  margin-top: 10rem;
+  width: 22.6rem;
+  height: 26.6rem;
 }
 
 .chart {
-  margin: 2.4rem 1.6rem 1.6rem;
+  position: relative;
+  display: flex;
+  margin-top: 2rem;
+
+
+
+  width: 21.6rem;
+  height: 10.8rem;
+  overflow: hidden;
+}
+
+.chart::before {
+  content: "";
+  margin-top: 1.2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.1rem;
+  width: 21.6rem;
+  height: 19.6rem;
+  display: block;
+  border-radius: 50%;
+
+  background:
+  linear-gradient(180deg,rgba(251, 219, 96, 0.2) 0%,rgba(251, 219, 96, 0) 101.89%);
+
+  --mask: linear-gradient(0deg, white 50%, transparent 0%);
+  mask: var(--mask);
+  -webkit-mask: var(--mask);
+  rotate: calc(1.8deg * var(--pos-x));
+
+
+}
+
+.chart img {
+
+  width: 100%;
+  height: 108%;
+  top: 0;
+
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.sun-chart::before {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #F6C833;
+
+  top: 68%;
+  left: 43%;
+  margin: 1rem;
+  transform: rotate(calc(1deg * (((100 - var(--pos-x)) / -100 )*180 ))) translate(10.3rem);
+}
+
+.time-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.time-sun {
+  font-size: 1.2rem;
+  color: white;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }

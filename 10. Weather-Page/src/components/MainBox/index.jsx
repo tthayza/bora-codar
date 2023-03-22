@@ -20,7 +20,9 @@ function MainBox() {
     },
     daily: {
       temperature_2m_min: [],
-      temperature_2m_max: []
+      temperature_2m_max: [],
+      sunrise: [],
+      sunset: []
     }
 
   })
@@ -41,12 +43,13 @@ function MainBox() {
   const min = weatherInfo?.daily?.temperature_2m_min[0]
   const max = weatherInfo?.daily?.temperature_2m_max[0]
 
+  const formattedDate = new Date().toISOString().split('T')[0]
+  const parameterIndexSun = (weatherInfo?.daily?.time)?.indexOf(formattedDate)
 
 
   return(
     <div className="main-box">
-
-      <div className="left ">
+      <div className="left">
         <div className="main-left">
           <BoxNow weatherInfo={weatherInfo} parameterIndex={parameterIndex} max={max} min={min}/>
         </div>
@@ -54,7 +57,7 @@ function MainBox() {
       <div className="right flex">
         <div className="air-and-suntime flex">
             <BoxAir currentDate={currentDate}/>
-            <SunsetHistoric />
+            <SunsetHistoric weatherInfo={weatherInfo} parameterIndexSun={parameterIndexSun}/>
         </div>
 
         <div className="days">
