@@ -27,7 +27,7 @@ function EmailInput(props) {
   return(
     <div>
       <label htmlFor="email">{props.value}</label>
-      <input className="input-value"type="text" placeholder="Digite seu e-mail" id="email" onChange={(e) => setEmailInput(e.target.value)} onBlur={checkingEmailInput}/>
+      <input className="input-value"type="text" placeholder="Digite seu e-mail" id="e-mail" onChange={(e) => setEmailInput(e.target.value)} onBlur={checkingEmailInput}/>
       <p style={{color: colorText}}>{outputForEmail}</p>
     </div>
   )

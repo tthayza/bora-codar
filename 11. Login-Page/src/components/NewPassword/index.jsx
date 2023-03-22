@@ -12,7 +12,7 @@ function NewPassword() {
         <label htmlFor="password">Confirme a nova senha</label>
         <PasswordInput />
       </div>
-      <a className="redirection" href="/sign-in"> Clique aqui para se registrar</a>
+      <a className="redirection" href="/"> Clique aqui para se registrar</a>
     </div>
   )
 }

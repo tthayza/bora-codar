@@ -1,5 +1,5 @@
 import logo from "./assets/logo.svg"
-import SignIn from "./components/SignIn"
+
 import "./styles/global.css"
 
 function App(props) {
@@ -15,7 +15,6 @@ function App(props) {
           <p> {props.description}</p>
         </div>
         {props.children}
-        {/* <SignIn /> */}
 
       </div>
       <div className="right side">

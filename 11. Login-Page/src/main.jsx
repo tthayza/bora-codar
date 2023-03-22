@@ -9,7 +9,7 @@ import SignUp from './components/SignUp';
 
 const router = createBrowserRouter([
   {
-    path: "/sign-in",
+    path: "/",
     element: <App title="Acesse a Plataforma" description="Faça login para começar a construir seus projetos ainda hoje."><SignIn /></App>,
   },
   {

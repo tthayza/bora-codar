@@ -3,19 +3,21 @@ import "./styles.css"
 import PasswordInput from "../PasswordInput";
 import EmailInput from "../EmailInput";
 
-function SignIn(props) {
+function SignIn() {
   return (
     <div className="sign-in">
       <div className="entry-box">
         <div className="entry">
-          <EmailInput value="Email" />
+        <label htmlFor="e-mail">E-mail</label>
+          <EmailInput />
         </div>
         <div className="entry">
           <div className="password-text">
             <a className="forget-password" href="/new-password">Esqueceu sua senha?</a>
           </div>
           <div className="password-entry">
-            <PasswordInput value="Senha"/>
+          <label htmlFor="password">Senha</label>
+            <PasswordInput />
           </div>
         </div>
       </div>
