@@ -22,8 +22,9 @@
 }
 
 .air-and-suntime {
+  width: 100%;
   height: 70%;
-  gap: 7rem;
+  gap: 1.4rem;
 }
 
 .days {

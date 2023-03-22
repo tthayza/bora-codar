@@ -31,19 +31,20 @@ function SunsetHistoric(props) {
           Histórico do sol
         </h2>
       </div>
-      <div className="sun-chart-wrapper">
-        <div className="sun-chart"  style={{ "--pos-x": sunPosition }}>
-          <div className="chart ">
-            <img src={chartSun} alt="" />
+      <div className="sun-main">
+        <div className="sun-chart-wrapper">
+          <div className="sun-chart"  style={{ "--pos-x": sunPosition }}>
+            <div className="chart">
+              <img src={chartSun} alt="" />
+            </div>
+            <time className="time-now">{currentHour}</time>
           </div>
-          <time className="time-now">{currentHour}</time>
+        </div>
+        <div className="time-sun">
+          <time className="sunrise">{sunriseTime}</time>
+          <time className="sunset">{sunsetTime}</time>
         </div>
       </div>
-      <div className="time-sun">
-            <time className="sunrise">{sunriseTime}</time>
-            <time className="sunset">{sunsetTime}</time>
-
-          </div>
     </div>
 
   )

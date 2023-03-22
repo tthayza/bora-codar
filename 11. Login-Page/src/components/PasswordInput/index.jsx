@@ -3,7 +3,7 @@ import showIcon from "../../assets/show.svg"
 import hideIcon from "../../assets/hide.svg"
 import { useState } from "react";
 
-function PasswordInput() {
+function PasswordInput(props) {
   const [passwordVisibility, setPasswordVisibility] = useState("password");
   const [currentIcon, setCurrentIcon] = useState(hideIcon)
   const changingVisility = () => {
@@ -17,6 +17,7 @@ function PasswordInput() {
   }
   return(
     <div className="password-entry">
+      <label htmlFor="password">{props.value}</label>
       <input type={passwordVisibility} placeholder="Digite sua senha" id="password" className="input-value"/>
       <div className="icon">
         <img src={currentIcon} alt="" height={"25px"} width={"25px"} onClick={changingVisility}/>

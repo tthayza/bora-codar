@@ -1,8 +1,8 @@
 import logo from "./assets/logo.svg"
 import SignIn from "./components/SignIn"
 import "./styles/global.css"
-function App() {
 
+function App(props) {
   return (
     <div className="app">
       <div className="left side">
@@ -11,10 +11,11 @@ function App() {
           <h1> Vertigo</h1>
         </div>
         <div className="text">
-          <h1>Acesse a plataforma</h1>
-          <p> Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+          <h1>{props.title}</h1>
+          <p> {props.description}</p>
         </div>
-        <SignIn />
+        {props.children}
+        {/* <SignIn /> */}
 
       </div>
       <div className="right side">

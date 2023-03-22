@@ -29,8 +29,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* border: red solid 4px; */
 }
 
 .title {
@@ -46,6 +44,7 @@
 
 .text {
   margin-bottom: 4rem;
+  width: 65%;
 }
 
 .text h1 {
@@ -79,4 +78,21 @@
 
   padding: 1.6rem 1.2rem;
   margin-top: 0.8rem;
+}
+
+a {
+  color: #CE043D;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.redirection {
+  text-align: center;
 }

@@ -3,7 +3,12 @@
   height: 100%;
 
   flex-direction: column;
-  padding: 2rem;
+  padding: 3.2rem 2.5rem 1.6rem;
+}
+
+.sun-main {
+  width: 22rem;
+  height: 17rem;
 }
 
 .sun-chart-wrapper {
@@ -75,8 +80,8 @@
   border-radius: 50%;
   background-color: #F6C833;
 
-  top: 68%;
-  left: 43%;
+  top: 72%;
+  left: 44%;
   margin: 1rem;
   transform: rotate(calc(1deg * (((100 - var(--pos-x)) / -100 )*180 ))) translate(10.3rem);
 }
