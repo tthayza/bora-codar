@@ -9,6 +9,10 @@
   margin-bottom: 40px;
 }
 
+.header-main h2 {
+  font-size: 32px;
+}
+
 .buttons {
   padding: 8px;
 }

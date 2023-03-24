@@ -1,11 +1,16 @@
 import leftimage from "../../assets/leftimage.svg"
-import rightimage from "../../assets/rightimage.svg"
 import locationicon from "../../assets/locationicon.svg"
 import searchicon from "../../assets/searchicon.svg"
-import downarrow from "../../assets/downarrow.svg"
+import downArrow from "../../assets/downarrow.svg"
 import "./styles.css"
+import { useState } from "react"
 
-function BoxHeader() {
+function BoxHeader(props) {
+  const [blockName, setBlockName] = useState('')
+  const [cityName, setCityName] = useState('')
+  const states = props.blocks.map((block) => block.estado)
+  const noRepeatStates = [...new Set(states)]
+  console.log(noRepeatStates)
   return (
     <div className="box-header">
       <div className ="left-image">
@@ -17,16 +22,32 @@ function BoxHeader() {
           <h1>Encontre os <span>melhores blocos</span>  <br /> de carnaval de 2023</h1>
         </section>
         <section className="search-local">
-          <p>
+          <label htmlFor="name">
             <img src={searchicon} alt="" />
-            Pesquise por nome
-            </p>
-          <p>
+          </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Pesquise por nome"
+            onChange={(e) => setBlockName(e.target.value)}/>
+          <label htmlFor="city">
             <img src={locationicon} alt="" />
-            Selecione uma cidade
-            <img src={downarrow} alt="" />
-          </p>
-          <button className="find-button">Buscar agora</button>
+          </label>
+          <input
+            id="city"
+            type="text"
+            placeholder="Selecione uma cidade"
+            onChange={(e) => setCityName(e.target.value)}
+            />
+          <select className="select-city" >
+            <option value=""> </option>
+            {noRepeatStates.map((data)=> {console.log(data)
+              return <option  value={data}>{data}</option>})}
+          </select>
+          <button
+            className="find-button"
+            onClick={() => props.findingBlock(blockName)}
+            >Buscar agora</button>
         </section>
       </div>
       <div className ="right-image">

@@ -65,14 +65,14 @@ span {
 
 .search-local {
   display: flex;
+  align-items: center;
   padding: 40px;
   gap: 24px;
 }
 
-.search-local p {
+.search-local input {
   display: flex;
   gap: 12px;
-  align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
@@ -80,9 +80,39 @@ span {
   background: var(--bg-color);
   border-radius: 5px;
   padding: 12px 8px 12px 14px;
+  border: none;
 }
 
-button {
+.select-city {
+  appearance: none;
+  color: #858793;
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 50%;
+  background-color:transparent;
+
+  background-image: url(../../assets/downarrow.svg);
+  background-position: center;
+  background-size: cover;
+
+
+
+}
+
+
+.select-city:hover{
+  cursor: pointer;
+  filter: brightness(80%);
+}
+
+
+
+
+
+
+.find-button, .map, .list {
   color: white;
   background-color: var(--secondary-color);
   border: none;
@@ -96,3 +126,9 @@ button {
   max-width: 169px;
   height: 48px;
 }
+
+.find-button:hover, .map:hover, .list:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+
