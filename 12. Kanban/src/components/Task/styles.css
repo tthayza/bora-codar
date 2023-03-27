@@ -1,0 +1,49 @@
+.task {
+  width: 100%;
+  height: fit-content;
+
+
+  background-color: white;
+  padding: 1.8rem 2.4rem;
+  box-shadow: .0rem .4rem 1.6rem #EAE2FD;
+  border-radius: .8rem;
+
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--titleColor)
+}
+
+.description {
+  color: #756966;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 130%;
+
+  height: 5rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.tag {
+  background-color: var(--light);
+  color: white;
+
+  border-radius: .8rem;
+  padding: .4rem .8rem;
+  gap: 1rem;
+
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 130%;
+}

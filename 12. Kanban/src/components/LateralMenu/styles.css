@@ -1,0 +1,32 @@
+.lateral-menu {
+  margin-left: 3.5rem;
+  margin-top: 1.8rem;
+  width: 10%;
+
+  /* border: 2px solid darkblue; */
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+  margin-top: 8rem;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  color: #fbbfd8;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.page h3:hover, .page img:hover {
+  color: white;
+  cursor: pointer;
+  transform:rotate(2deg);
+  transition: 0.2s;
+}

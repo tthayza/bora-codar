@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  font-family: 'Inter', sans-serif;
+  --dark: #80041E;
+  --light: #cb6f89;
+  --paragraphColor: #fbbfd8;
+  --bg-kanban: #fffdfd;
+  --titleColor:  #403937;
+
+  font-size: 62.5%;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+
+  background-color: #80041E;
+
+  padding-top: 1.7rem;
+}
