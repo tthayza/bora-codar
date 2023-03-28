@@ -1,13 +1,16 @@
-import logo from "../../assets/logo.svg"
-import tablet from "../../assets/tablet.svg"
-import people from "../../assets/people.svg"
-import document from "../../assets/document.svg"
-import cog from "../../assets/cog.svg"
-
-import "./styles.css"
+import React, { useEffect } from 'react'
+import cog from '../../assets/cog.svg'
+import document from '../../assets/document.svg'
+import logo from '../../assets/logo.svg'
+import people from '../../assets/people.svg'
+import tablet from '../../assets/tablet.svg'
+import './styles.css'
 
 function LateralMenu() {
-  return(
+  useEffect(() => {
+    console.log('LateralMenu')
+  }, [])
+  return (
     <div className="lateral-menu">
       <img src={logo} alt="logo em formato de caracol" />
       <div className="pages">
@@ -28,8 +31,6 @@ function LateralMenu() {
           <h3>Ajustes</h3>
         </div>
       </div>
-
-
     </div>
   )
 }

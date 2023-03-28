@@ -2,8 +2,6 @@
   margin-left: 3.5rem;
   margin-top: 1.8rem;
   width: 10%;
-
-  /* border: 2px solid darkblue; */
 }
 
 .pages {
@@ -24,9 +22,10 @@
   line-height: 125%;
 }
 
-.page h3:hover, .page img:hover {
+.page h3:hover,
+.page img:hover {
   color: white;
   cursor: pointer;
-  transform:rotate(2deg);
+  transform: rotate(2deg);
   transition: 0.2s;
 }

@@ -1,10 +1,12 @@
 // import { useState } from 'react'
-import Kanban from "./components/Kanban"
-import LateralMenu from "./components/LateralMenu"
-import "./styles/global.css"
+import React from 'react'
+
+import Kanban from './components/Kanban'
+import LateralMenu from './components/LateralMenu'
+import './styles/global.css'
 
 function App() {
-  return(
+  return (
     <div className="app">
       <LateralMenu />
       <Kanban />
