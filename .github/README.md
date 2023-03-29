@@ -87,6 +87,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/11.%20Login-Page"><strong>Página de Login</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/11.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>12</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/12.%20Kanban"><strong>Kanban</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/12.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
