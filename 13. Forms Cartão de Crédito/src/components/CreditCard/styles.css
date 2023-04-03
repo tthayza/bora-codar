@@ -115,3 +115,7 @@
 .name-expiry h1 {
   font-size: 1.6rem;
 }
+
+.name-expiry .date {
+  letter-spacing: 0.3rem;
+}

@@ -8,6 +8,11 @@ const App = () => {
   const [cardHolderName, setCardHolderName] = useState('')
   const [cardValidity, setCardValidity] = useState('')
   const [cardCodeCard, setCardCodeCard] = useState('')
+  const [showBack, setShowBack] = useState(false)
+  function flipCard() {
+    setShowBack(!showBack)
+  }
+  console.log(showBack)
 
   return (
     <div className="app">
@@ -18,6 +23,7 @@ const App = () => {
               <div className=" entry">
                 <label htmlFor="card-number">Número do cartão</label>
                 <input
+                  placeholder="Número do cartão"
                   type="text"
                   id="card-number"
                   onChange={e => setCardNumber(e.target.value)}
@@ -26,6 +32,7 @@ const App = () => {
               <div className=" entry">
                 <label htmlFor="card-holder-name">Nome do titular</label>
                 <input
+                  placeholder="Nome como está no cartão"
                   type="text"
                   id="card-holder-name"
                   onChange={e =>
@@ -37,6 +44,7 @@ const App = () => {
                 <div className="entry">
                   <label htmlFor="validity">Validade</label>
                   <input
+                    placeholder="mm/aa"
                     type="text"
                     name=""
                     id="validity"
@@ -48,6 +56,7 @@ const App = () => {
                     <label htmlFor="code-card">CVV</label>
                   </div>
                   <input
+                    placeholder="***"
                     type="password"
                     name=""
                     id="code-card"
@@ -63,6 +72,7 @@ const App = () => {
               cardHolderName={cardHolderName}
               cardValidity={cardValidity}
               cardCodeCard={cardCodeCard}
+              showback={showBack}
             />
 
             <div className="text-footer">
@@ -71,7 +81,7 @@ const App = () => {
                 <h2>Seus dados estão seguros</h2>
               </div>
               <div className="btn-turn">
-                <button className="btn-turning"></button>
+                <button className="btn-turning" onClick={flipCard}></button>
               </div>
             </div>
           </div>

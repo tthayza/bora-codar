@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import contactPayment from '../../assets/contact-payment.svg'
 import elo from '../../assets/elo.svg'
 import mastercard from '../../assets/mastercard.svg'
@@ -6,12 +6,9 @@ import visa from '../../assets/visa.svg'
 import './styles.css'
 
 const CreditCard = props => {
-  const [showBack, setShowBack] = useState(false)
-  function flipCard() {
-    setShowBack(!showBack)
-  }
-  const { cardNumber, cardHolderName, cardValidity, cardCodeCard } = props
-
+  const { showback, cardNumber, cardHolderName, cardValidity, cardCodeCard } =
+    props
+  // console.log(showBack)
   const setCurrentFlag = currentFlag => {
     if (currentFlag == '5' || currentFlag == '2') {
       return mastercard
@@ -20,7 +17,7 @@ const CreditCard = props => {
     }
     return elo
   }
-  console.log(cardCodeCard)
+
   const formatedValidity = date => {
     const formatedDate = date.padEnd(4, '•').match(/.{1,2}/g)
     return (
@@ -30,10 +27,7 @@ const CreditCard = props => {
     )
   }
   return (
-    <div
-      className={`credit-card  ${showBack ? 'flip' : ''}`}
-      onClick={flipCard}
-    >
+    <div className={`credit-card  ${showback ? 'flip' : ''}`}>
       <div className=" card-front">
         <div className="logo">
           <img src={setCurrentFlag(cardNumber[0])} alt="" />
@@ -49,7 +43,7 @@ const CreditCard = props => {
         </div>
         <div className="name-expiry">
           <h1>{cardHolderName || 'Seu nome aqui'} </h1>
-          {formatedValidity(cardValidity)}
+          <h1 className="date">{formatedValidity(cardValidity)}</h1>
         </div>
       </div>
       <div className=" card-back">
