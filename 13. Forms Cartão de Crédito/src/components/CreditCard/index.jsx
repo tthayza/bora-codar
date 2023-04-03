@@ -8,7 +8,6 @@ import './styles.css'
 const CreditCard = props => {
   const { showback, cardNumber, cardHolderName, cardValidity, cardCodeCard } =
     props
-  // console.log(showBack)
   const setCurrentFlag = currentFlag => {
     if (currentFlag == '5' || currentFlag == '2') {
       return mastercard
@@ -43,7 +42,7 @@ const CreditCard = props => {
         </div>
         <div className="name-expiry">
           <h1>{cardHolderName || 'Seu nome aqui'} </h1>
-          <h1 className="date">{formatedValidity(cardValidity)}</h1>
+          <div className="date">{formatedValidity(cardValidity)}</div>
         </div>
       </div>
       <div className=" card-back">

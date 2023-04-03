@@ -12,7 +12,6 @@ const App = () => {
   function flipCard() {
     setShowBack(!showBack)
   }
-  console.log(showBack)
 
   return (
     <div className="app">
@@ -23,9 +22,11 @@ const App = () => {
               <div className=" entry">
                 <label htmlFor="card-number">Número do cartão</label>
                 <input
+                  name=""
                   placeholder="Número do cartão"
                   type="text"
                   id="card-number"
+                  maxLength={16}
                   onChange={e => setCardNumber(e.target.value)}
                 />
               </div>
@@ -35,6 +36,7 @@ const App = () => {
                   placeholder="Nome como está no cartão"
                   type="text"
                   id="card-holder-name"
+                  maxLength={19}
                   onChange={e =>
                     setCardHolderName(e.target.value.toUpperCase())
                   }
@@ -45,6 +47,7 @@ const App = () => {
                   <label htmlFor="validity">Validade</label>
                   <input
                     placeholder="mm/aa"
+                    maxLength={4}
                     type="text"
                     name=""
                     id="validity"
@@ -60,6 +63,8 @@ const App = () => {
                     type="password"
                     name=""
                     id="code-card"
+                    maxLength={3}
+                    pattern="[0-9]*"
                     onChange={e => setCardCodeCard(e.target.value)}
                   />
                 </div>
