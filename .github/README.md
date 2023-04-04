@@ -3,9 +3,6 @@
 <p align="justify">Esse repositório tem como objetivo armazenar os projetos semanais propostos pela RocketSeat no desafio <strong>#boraCodar</strong>. Nesses desafios, tenho buscado realmente me desafiar e desenvolver meu aprendizado explorando <strong>JavaScript</strong> e <strong>React</strong>. 🚀 </p>
 <br>
 
-
-
-
 <p align="center">
     <h3 align="center"><strong>DESAFIOS FEITOS</strong></h3>
     <p align="center"><a href="https://boracodar.dev">Acesse o desafio desta semana clicando aqui</a><br></p>
@@ -91,6 +88,11 @@
             <td><strong>12</strong></td>
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/12.%20Kanban"><strong>Kanban</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/12.png" /></a></td>
+        </tr>
+        <tr>
+            <td><strong>13</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/12.%20Kanban"><strong>Forms de Cartão de Crédito</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/13.png" /></a></td>
         </tr>
     </tbody>
 </table></p>
