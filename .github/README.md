@@ -91,7 +91,7 @@
         </tr>
         <tr>
             <td><strong>13</strong></td>
-            <td><a href="https://github.com/tthayza/bora-codar/tree/main/12.%20Kanban"><strong>Forms de Cartão de Crédito</strong></a></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/13.%20Forms%20Cart%C3%A3o%20de%20Cr%C3%A9dito"><strong>Forms de Cartão de Crédito</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/13.png" /></a></td>
         </tr>
     </tbody>
