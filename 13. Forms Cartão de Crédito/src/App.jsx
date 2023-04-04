@@ -66,6 +66,8 @@ const App = () => {
                     maxLength={3}
                     pattern="[0-9]*"
                     onChange={e => setCardCodeCard(e.target.value)}
+                    onFocus={() => setShowBack(true)}
+                    onBlur={() => setShowBack(false)}
                   />
                 </div>
               </div>
