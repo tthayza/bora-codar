@@ -94,6 +94,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/13.%20Forms%20Cart%C3%A3o%20de%20Cr%C3%A9dito"><strong>Forms de Cartão de Crédito</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/13.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>14</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/14.%20Upload%20Component"><strong>Componente de Upload</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/14.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
