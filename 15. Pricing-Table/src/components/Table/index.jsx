@@ -1,10 +1,11 @@
 import React from 'react'
+import check from '../../assets/check.svg'
+import info from '../../assets/info.svg'
 
 import './styles.css'
 
 const Table = (props) => {
-  const { title, name, price } = props
-
+  const { title, name, price, benefits } = props
   const bgMiddle = name === 'Ultimate' ? '#2A0F22' : 'white'
   const typeBorder = name === 'Ultimate' ? 'none' : '0.1rem solid #e2e8f0'
   const colorTitle = name === 'Ultimate' ? '#FF6DB3' : '#ED3A70'
@@ -15,7 +16,8 @@ const Table = (props) => {
   const dividerBorder =
     name == 'Ultimate' ? '.1rem solid #4E3355' : '.1rem solid #E2E8F0'
   const textPrice = name === 'Enterprise' ? '' : 'R$'
-  console.log(title)
+  const colorList = name === 'Ultimate' ? '#CBD5E1' : '#475569'
+  const benefitsList = benefits
   return (
     <div
       className="plan"
@@ -41,6 +43,26 @@ const Table = (props) => {
         Assinar agora
       </button>
       <div className="divider" style={{ border: dividerBorder }}></div>
+      <div className="benefits-list">
+        {benefitsList.map((item, index) => (
+          <div key={index} className="benefits">
+            <div className="benefit-info">
+              <img src={check} alt="" />
+              <h3
+                className="benefit-text"
+                style={{ color: colorList }}
+                key={index}
+              >
+                {' '}
+                {item}{' '}
+              </h3>
+            </div>
+            <div className="img-info">
+              <img src={info} alt="" />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
