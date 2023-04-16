@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(246, 239, 230);
+}
+
+.container {
+  width: 80%;
+  height: 75%;
+  padding: 1rem;
+
+  /* border: 4px solid saddlebrown; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3.2rem;
+}
