@@ -99,6 +99,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/14.%20Upload%20Component"><strong>Componente de Upload</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/14.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>15</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/15.%20Pricing-Table"><strong>Pricing Table</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/15.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 

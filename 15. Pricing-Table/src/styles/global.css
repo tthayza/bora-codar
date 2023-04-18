@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 :root {
@@ -31,4 +31,19 @@
   justify-content: space-around;
   align-items: center;
   gap: 3.2rem;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1200px) {
+  html {
+    height: 100%;
+    width: 100vw;
+  }
+  .app {
+    height: unset;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }

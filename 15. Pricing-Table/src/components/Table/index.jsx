@@ -18,15 +18,13 @@ const Table = (props) => {
   const textPrice = name === 'Enterprise' ? '' : 'R$'
   const colorList = name === 'Ultimate' ? '#CBD5E1' : '#475569'
   const currentVisibility = name === 'Ultimate' ? 'visible' : 'hidden'
+  const typeBtn = name === 'Ultimate' ? 'btn-ultimate' : 'btn-plan'
   const benefitsList = benefits
   const [hover, setHover] = useState(false)
 
-  const handleMouseEnter = () => {
-    setHover(true)
-  }
-  const handleMouseLeave = () => {
-    setHover(false)
-  }
+  const handleMouseEnter = () => setHover(true)
+
+  const handleMouseLeave = () => setHover(false)
 
   return (
     <div
@@ -49,6 +47,7 @@ const Table = (props) => {
         </h2>
       </div>
       <button
+        className={typeBtn}
         style={{
           background: bgButton,
           border: borderButton,
