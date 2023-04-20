@@ -1,0 +1,23 @@
+.contact {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.image img {
+  border-radius: 50%;
+}
+
+.contact-infos h2 {
+  margin-bottom: 0.4rem;
+  color: #e1e1e6;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.contact-infos p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #8c8cba;
+}

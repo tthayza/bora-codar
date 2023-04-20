@@ -1,0 +1,59 @@
+.header {
+  padding: 4rem;
+  width: 30%;
+  height: fit-content;
+  /* border: solid 2px wheat; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem;
+  background-color: rgb(75, 20, 45);
+  border-radius: 0.8rem;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h1 {
+  color: #e1e1e6;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.filter-content {
+  width: 100%;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.filter-content input {
+  width: 100%;
+  position: absolute;
+  background: #2b0f19;
+  border-radius: 0.5rem;
+  border: none;
+
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  align-items: center;
+}
+.filter-content img {
+  position: relative;
+  top: 1.5rem;
+  left: 2rem;
+}
+
+.filter-content input[placeholder] {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
