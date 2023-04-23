@@ -1,21 +1,26 @@
 import React from 'react'
 import './styles.css'
 
-export const Contact = () => {
+export const Contact = (props) => {
+  const { contacts } = props
   return (
     <div className="contact">
-      <div className="image">
-        <img
-          width="48px"
-          height="48px"
-          src="https://randomuser.me/api/portraits/women/79.jpg"
-          alt="foto de uma mulher"
-        />
-      </div>
-      <div className="contact-infos">
-        <h2>Amanda</h2>
-        <p>(16) 9 9999-9999</p>
-      </div>
+      {contacts.map((contact, index) => (
+        <div className="c" key={index}>
+          <div key={index} className="image">
+            <img
+              width="48px"
+              height="48px"
+              src={contact.image}
+              alt="foto de uma mulher"
+            />
+          </div>
+          <div className="contact-infos">
+            <h2 key={index}>{contact.nome}</h2>
+            <p key={index}>{contact.number}</p>
+          </div>
+        </div>
+      ))}
     </div>
   )
 }

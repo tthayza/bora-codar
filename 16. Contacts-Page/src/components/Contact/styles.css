@@ -1,5 +1,10 @@
 .contact {
   display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.c {
+  display: flex;
   gap: 1.6rem;
 }
 
