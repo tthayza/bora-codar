@@ -1,11 +1,43 @@
 .contact {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
 }
 .c {
+  width: 100%;
   display: flex;
-  gap: 1.6rem;
+  gap: 25%;
+  padding: 0 2rem;
+}
+
+.informations {
+  display: flex;
+  gap: 2rem;
+  justify-items: end;
+}
+
+.letters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  padding: 1rem 1.5rem;
+  background-color: palevioletred;
+  border-radius: 0.8rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.letter h2 {
+  color: #e1e1e6;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.9rem;
 }
 
 .image img {
