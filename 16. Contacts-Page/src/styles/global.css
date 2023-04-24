@@ -12,31 +12,34 @@
   font-size: 62.5%;
 }
 
-.app {
-  width: 100%;
-  height: 100%;
+.App {
+  width: 100vw;
+  height: 100vh;
+
   background-color: rgb(51, 2, 22);
 
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 5rem;
 }
 
 .top {
-  width: 100%;
+  width: 70%;
   display: flex;
   justify-content: center;
 }
 
 .bottom {
-  width: 30%;
+  width: 70%;
   height: fit-content;
   display: flex;
   justify-content: space-around;
-  /* border: solid 2px rebeccapurple; */
   background-color: rgb(24, 10, 17);
 
   padding: 4.8rem 2rem;
+
+  overflow-y: auto;
+  border-radius: 0.8rem;
 }

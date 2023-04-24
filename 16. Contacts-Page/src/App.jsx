@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Contact } from './components/Contact'
 import { Header } from './components/Header'
 
 function App() {
+  const [filteredContacts, setFilteredContacts] = useState([])
   const contacts = [
     {
       nome: 'Alirio Burgues',
@@ -65,13 +66,26 @@ function App() {
     }
   })
 
+  const findingContact = (name) => {
+    const currentContact = orderlyContacts.filter((contact) =>
+      contact.nome.toLowerCase().includes(name.toLowerCase())
+    )
+    console.log(currentContact)
+    setFilteredContacts(currentContact)
+    console.log(currentContact)
+  }
+
   return (
-    <div className="app">
+    <div className="App">
       <div className="top">
-        <Header />
+        <Header findingContact={findingContact} />
       </div>
       <div className="bottom">
-        <Contact contacts={orderlyContacts} />
+        <Contact
+          contacts={
+            filteredContacts.length > 0 ? filteredContacts : orderlyContacts
+          }
+        />
       </div>
     </div>
   )

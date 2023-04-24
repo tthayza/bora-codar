@@ -4,16 +4,21 @@
   box-sizing: border-box;
 }
 
-
 :root {
   font-family: 'Inter', sans-serif;
-  --dark: #80041E;
+  --dark: #80041e;
   --light: #cb6f89;
   --paragraphColor: #fbbfd8;
   --bg-kanban: #fffdfd;
-  --titleColor:  #403937;
+  --titleColor: #403937;
 
   font-size: 62.5%;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  background-color: #80041e;
 }
 
 .app {
@@ -21,8 +26,9 @@
   height: 100vh;
 
   display: flex;
+  justify-content: flex-start;
 
-  background-color: #80041E;
+  background-color: #80041e;
 
   padding-top: 1.7rem;
 }

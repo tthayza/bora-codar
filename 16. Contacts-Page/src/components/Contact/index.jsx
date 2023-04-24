@@ -20,7 +20,7 @@ export const Contact = (props) => {
             )}
           </div>
           <div className="informations">
-            <div key={index} className="image">
+            <div className="image">
               <img
                 width="48px"
                 height="48px"
@@ -29,8 +29,8 @@ export const Contact = (props) => {
               />
             </div>
             <div className="contact-infos">
-              <h2 key={index}>{contact.nome}</h2>
-              <p key={index}>{contact.number}</p>
+              <h2>{contact.nome}</h2>
+              <p>{contact.number}</p>
             </div>
           </div>
         </div>
