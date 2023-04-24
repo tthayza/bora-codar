@@ -1,4 +1,4 @@
-# <h1 align="center"> **#boraCodar uma Página de Contatos** 💲 </h1>
+# <h1 align="center"> **#boraCodar uma Página de Contatos** 👥📞 </h1>
 
 <h2><strong>Proposta </strong></h2>
 <p align="justify"> A proposta inicial desse desafio é desenvolver uma página de contatos. Nesse contexto, deve haver uma lista de contatos identificados por imagem, nome e telefone, um filtro de busca e como numa agenda, os contatos devem estar organizados alfabeticamente, sendo que a letra inicial deve estar também exposta.</p>
