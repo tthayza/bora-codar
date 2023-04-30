@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(211, 197, 178);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  background-color: white;
+  padding: 3.2rem;
+  box-shadow: 0rem 0.8rem 3.2rem rgba(0, 0, 0, 0.16);
+  border-radius: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  width: fit-content;
+  height: 50%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header h3 {
+  color: #333333;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.calendar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.calendar .days li {
+  margin-top: 2rem;
+
+  font-size: 1.6rem;
+  line-height: 16px;
+  font-weight: 400;
+  color: #666666;
+  cursor: pointer;
+}
+.calendar ul li {
+  width: calc(100% / 7);
+}
+
+.weeks {
+  margin-bottom: 0.4rem;
+}
+
+.weeks li {
+  font-family: 'Roboto', sans-serif;
+  color: #666666;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+
+  padding: 0.8rem 0.6rem;
+}
