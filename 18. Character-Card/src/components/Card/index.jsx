@@ -16,8 +16,22 @@ const Card = () => {
           <img src={character} alt="" />
         </div>
       </div>
-      <div>
-        <div className="infos"></div>
+      <div className="infos">
+        <ul>
+          <li>Filmes</li>
+          <p>
+            The Force Awakens, The Last Jedi, The Rise of Skywalker & Forces of
+            Destiny
+          </p>
+          <li>Espécie</li>
+          <p>Humana</p>
+          <li>Altura</li>
+          <p>1,7m</p>
+          <li>Localidade</li>
+          <p>Jakku</p>
+          <li>Armas</li>
+          <p>Sabre de luz, Blaster, Quarterstaff</p>
+        </ul>
       </div>
     </div>
   )

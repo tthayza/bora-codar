@@ -34,7 +34,15 @@
 .card {
   width: 35rem;
   height: 48rem;
+  transition: ease-in 0.3s;
   /* border: solid 1px oldlace; */
+}
+
+.card:hover {
+  box-shadow: -3px -5px 54px -30px rgba(255, 255, 255, 0.42);
+  transition: ease-in-out 0.3s;
+  transform: scale(1.01);
+  cursor: pointer;
 }
 
 .main {
@@ -50,6 +58,9 @@
   border-radius: 2rem;
   border: none;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .previous,
@@ -84,4 +95,13 @@
 
 .next {
   background-image: url(../assets/bg-next.svg);
+}
+
+.main:hover,
+.previous:hover,
+.next:hover {
+  box-shadow: -3px -5px 54px -30px rgba(255, 255, 255, 0.42);
+  transition: ease-in 0.3s;
+  transform: scale(1.1);
+  cursor: pointer;
 }
