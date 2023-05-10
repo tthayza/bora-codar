@@ -111,12 +111,12 @@
         </tr>
         <tr>
             <td><strong>17</strong></td>
-            <td><a href="https://github.com/tthayza/bora-codar/tree/main/17.%20Date-Picker"><strong>Contacts Page</strong></a></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/17.%20Date-Picker"><strong>Date Picker</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/17.png" /></a></td>
         </tr>
         <tr>
             <td><strong>18</strong></td>
-            <td><a href="https://github.com/tthayza/bora-codar/tree/main/18.%20Character-Card"><strong>Contacts Page</strong></a></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/18.%20Character-Card"><strong>Character Card</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/18.png" /></a></td>
         </tr>
     </tbody>
