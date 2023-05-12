@@ -1,3 +1,4 @@
+import React from 'react'
 import character from '../../assets/Character.png'
 import './styles.css'
 
