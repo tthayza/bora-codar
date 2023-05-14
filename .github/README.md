@@ -119,6 +119,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/18.%20Character-Card"><strong>Character Card</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/18.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>19</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/19.%20Transport-Widget"><strong>Transport Widget</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/19.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
