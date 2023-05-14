@@ -12,7 +12,7 @@
 .app {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(243, 214, 211);
+  background-color: #f3d6d3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,12 +70,13 @@
 
 .infos {
   display: flex;
+  justify-content: space-around;
 }
 
 .driver-id {
   display: flex;
   height: 200px;
-
+  width: 400px;
   /* border: solid 4px oldlace; */
 }
 
@@ -88,6 +89,7 @@
 }
 
 .driver-data {
+  top: 58%;
   width: 9%;
   /* border: solid 1px indianred; */
   display: flex;
@@ -97,13 +99,16 @@
   gap: 0.6rem;
 
   position: absolute;
+  z-index: 2;
+  transition: all ease 0.3s;
 }
 
 .stars {
   display: flex;
+  height: fit-content;
   background: #372d3b;
-  border-radius: 15.6862px;
-  padding: 7.84309px 21.5685px;
+  border-radius: 1.5rem;
+  padding: 0.3rem 2rem;
   color: #fbf8fc;
   justify-content: center;
   gap: 0.5rem;
@@ -116,6 +121,88 @@
 .name-driver h2 {
   font-weight: 700;
   font-size: 1.8rem;
-  line-height: 2.2rem;
   color: #372d3b;
+}
+
+.imgs {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  /* border: solid 4px khaki; */
+  width: 25%;
+  transition: all ease 0.3s;
+}
+
+.car-img img {
+  z-index: 0;
+  left: 20%;
+}
+
+.driver-img img {
+  position: absolute;
+  z-index: 1;
+  top: -25%;
+}
+
+.car-id {
+  transition: all ease 0.3s;
+}
+
+.car-id h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-bottom: 1.2rem;
+
+  color: #372d3b;
+}
+
+.car-id h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3rem;
+
+  color: #372d3b;
+}
+
+.send-message {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.send-message input {
+  background: #f5edf7;
+  border-radius: 2.4rem;
+  width: 51rem;
+  height: 6.4rem;
+  padding: 1.8rem 2.3rem;
+  border: none;
+}
+
+.send-message input[placeholder] {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+
+  color: #372d3b;
+}
+
+.icons {
+  display: flex;
+  gap: 4rem;
+}
+
+.icon {
+  transition: all ease 0.3s;
+}
+
+.driver-data:hover,
+.imgs:hover,
+.car-id:hover,
+.icon:hover {
+  cursor: pointer;
+  filter: opacity(0.8);
+  transform: scale(1.02) rotate(-1deg);
+  transition: all ease 0.3s;
 }
