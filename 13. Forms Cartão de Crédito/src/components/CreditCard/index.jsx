@@ -27,10 +27,10 @@ const CreditCard = props => {
   }
   return (
     <div className={`credit-card  ${showback ? 'flip' : ''}`}>
-      <div className=" card-front">
+      <div className="card-front">
         <div className="logo">
-          <img src={setCurrentFlag(cardNumber[0])} alt="" />
-          <img src={contactPayment} alt="" />
+          <img src={setCurrentFlag(cardNumber[0])} alt="bandeira do cartão" />
+          <img src={contactPayment} alt="ícone de aproximação" />
         </div>
         <div className="number-card">
           {cardNumber

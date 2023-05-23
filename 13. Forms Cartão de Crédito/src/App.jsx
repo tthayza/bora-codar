@@ -84,7 +84,7 @@ const App = () => {
 
             <div className="text-footer">
               <div className="text">
-                <img src={shield} alt="" />
+                <img src={shield} alt="ícone de segurança" />
                 <h2>Seus dados estão seguros</h2>
               </div>
               <div className="btn-turn">
