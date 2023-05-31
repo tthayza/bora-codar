@@ -124,6 +124,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/19.%20Transport-Widget"><strong>Transport Widget</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/19.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>20</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/20.%20Image-Gallery"><strong>Image Gallery</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/20.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
