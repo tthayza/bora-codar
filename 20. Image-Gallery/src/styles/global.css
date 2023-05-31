@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.app {
+  background-color: #121214;
+  width: 100vw;
+  height: 100%;
+  font-family: 'Hepta Slab', serif;
+  display: flex;
+  gap: 8rem;
+
+  padding: 14rem 13.5rem 14rem 11rem;
+}
+header {
+  width: 35%;
+  height: fit-content;
+}
+
+header h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  width: 80%;
+  margin-bottom: 3.2rem;
+}
+
+header i {
+  color: white;
+  font-size: 3rem;
+}
+
+.container {
+  position: relative;
+  transition: all 0.2s ease-in;
+  outline: transparent solid 0.4rem;
+  transition: all 0.4s linear;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.container:hover {
+  cursor: pointer;
+  filter: grayscale(100%);
+  outline-color: white;
+  transition: all 0.2s ease-in;
+}
+
+.container span {
+  width: 100%;
+  display: block;
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 200;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, transparent, black 90%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s linear;
+}
+
+.container:hover span {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.4s linear;
+}
+
+.grid {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.model-1 .container:nth-child(1) {
+  grid-row: 1/3;
+}
+
+.model-1 .container:nth-child(1) img,
+.model-2 .container:nth-child(3) img {
+  aspect-ratio: 9/16;
+}
+
+.horizontal {
+  grid-column: 1/3;
+}
+
+.horizontal img {
+  aspect-ratio: 16/9;
+}
+
+.model-2 .container:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1/3;
+}
