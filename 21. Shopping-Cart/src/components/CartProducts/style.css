@@ -30,5 +30,10 @@
   flex-direction: column;
   gap: 4.8rem;
   overflow-y: scroll;
-  height: 60%;
+  height: 80%;
+}
+
+footer {
+  width: 100%;
+  color: white;
 }

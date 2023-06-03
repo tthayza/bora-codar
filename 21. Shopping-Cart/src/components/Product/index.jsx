@@ -1,7 +1,20 @@
+import { useState } from 'react'
 import './style.css'
 const Product = (props) => {
-  const { name, price, image } = props
-
+  const [amount, setAmount] = useState(0)
+  const { name, price, image, increase, decreases } = props
+  const formatedPrice = Number.parseFloat(price).toLocaleString('pt-br', {
+    style: 'currency',
+    currency: 'BRL'
+  })
+  const decreasesAmount = () => {
+    setAmount(amount - 1)
+    decreases(Number.parseFloat(price))
+  }
+  const increaseAmount = () => {
+    setAmount(amount + 1)
+    increase(Number.parseFloat(price))
+  }
   return (
     <div className="product">
       <figure>
@@ -12,11 +25,15 @@ const Product = (props) => {
           <h3>{name}</h3>
         </div>
         <div className="infos">
-          <p>{price}</p>
+          <p>{formatedPrice}</p>
           <div className="amount">
-            <button className="minus btn"></button>
-            <p>0</p>
-            <button className="plus btn"></button>
+            <button
+              className="minus btn"
+              onClick={decreasesAmount}
+              disabled={amount <= 0}
+            ></button>
+            <p>{amount}</p>
+            <button className="plus btn" onClick={increaseAmount}></button>
           </div>
         </div>
       </div>

@@ -7,7 +7,16 @@ import duckImg from '../../assets/product-img-5.svg'
 import Product from '../Product'
 import './style.css'
 
-const CartProducts = () => {
+const CartProducts = (props) => {
+  const { increase, decreases, total } = props
+
+  const formatedTotal =
+    total <= 0
+      ? 'R$0,00'
+      : total.toLocaleString('pt-br', {
+          style: 'currency',
+          currency: 'BRL'
+        })
   return (
     <div className="cart-products">
       <header className="title">
@@ -17,35 +26,49 @@ const CartProducts = () => {
         <img src={closeBtn} alt="botão para fechar" />
       </header>
       <main className="products-area">
-        {/* <div className="prodd"> */}
         <Product
           name="Monitor Gamer Curvo 49 DQHD, 240Hz, 1ms, HDMI e DisplayPort, HDR 1000, FreeSync Premium, Ajuste de Altura - LC49G95TSSLXZD"
-          price="R$ 8.599,90"
+          price="8599.90"
           image={monitorImg}
+          increase={increase}
+          decreases={decreases}
         />
         <Product
           name="Cadeira Gamer  RGB - Preta com Iluminação (Led)"
-          price="R$ 959,90"
+          price="959.90"
           image={chairImg}
+          increase={increase}
+          decreases={decreases}
         />
         <Product
           name="Teclado Gamer Mecânico Low Profile RGB AW510K 580"
-          price="R$ 1.002,00"
+          price="1002.00"
           image={keyboardImg}
+          increase={increase}
+          decreases={decreases}
         />
         <Product
           name="Headset Gamer RGB Preto"
-          price="R$ 99,90"
+          price="99.90"
           image={headsetImg}
+          increase={increase}
+          decreases={decreases}
         />
         <Product
           name="Patinho De Borracha Para Banho"
-          price="R$ 19,90"
+          price="19.90"
           image={duckImg}
+          increase={increase}
+          decreases={decreases}
         />
-        {/* </div> */}
       </main>
-      <footer></footer>
+      <footer>
+        <div>
+          <p>Total</p>
+          <p>{formatedTotal}</p>
+        </div>
+        <p></p>
+      </footer>
     </div>
   )
 }
