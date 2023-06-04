@@ -3,6 +3,10 @@ import './style.css'
 const Product = (props) => {
   const [amount, setAmount] = useState(0)
   const { name, price, image, increase, decreases } = props
+  const formatedName =
+    name.replace(/\s/g, '').length <= 58
+      ? name
+      : name.substring(0, 59).concat('...')
   const formatedPrice = Number.parseFloat(price).toLocaleString('pt-br', {
     style: 'currency',
     currency: 'BRL'
@@ -22,7 +26,7 @@ const Product = (props) => {
       </figure>
       <div className="description">
         <div className="product-name">
-          <h3>{name}</h3>
+          <h3>{formatedName}</h3>
         </div>
         <div className="infos">
           <p>{formatedPrice}</p>

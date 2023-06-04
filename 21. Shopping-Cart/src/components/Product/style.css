@@ -46,6 +46,17 @@
   background-color: transparent;
 }
 
+.btn {
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  filter: brightness(55%);
+}
+
 .minus {
   background-image: url(../../assets/minus.svg);
   filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.1));

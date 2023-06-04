@@ -4,11 +4,12 @@ import chairImg from '../../assets/product-img-2.svg'
 import keyboardImg from '../../assets/product-img-3.svg'
 import headsetImg from '../../assets/product-img-4.svg'
 import duckImg from '../../assets/product-img-5.svg'
+import tag from '../../assets/tag.svg'
 import Product from '../Product'
 import './style.css'
 
 const CartProducts = (props) => {
-  const { increase, decreases, total } = props
+  const { increase, decreases, total, totalItems } = props
 
   const formatedTotal =
     total <= 0
@@ -21,7 +22,7 @@ const CartProducts = (props) => {
     <div className="cart-products">
       <header className="title">
         <h1>
-          Seu carrinho tem <span>5 itens</span>
+          Seu carrinho tem <span>{totalItems} itens</span>
         </h1>
         <img src={closeBtn} alt="botão para fechar" />
       </header>
@@ -63,11 +64,17 @@ const CartProducts = (props) => {
         />
       </main>
       <footer>
-        <div>
-          <p>Total</p>
-          <p>{formatedTotal}</p>
+        <div className="total">
+          <p>Total:</p>
+          <p className="total-price">{formatedTotal}</p>
         </div>
-        <p></p>
+        <div className="coupon">
+          <img src={tag} alt="" />
+          <p>Adicionar cupom</p>
+        </div>
+        <div className="btn">
+          <button>Finalizar compra</button>
+        </div>
       </footer>
     </div>
   )
