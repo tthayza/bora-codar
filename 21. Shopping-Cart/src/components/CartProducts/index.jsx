@@ -22,7 +22,10 @@ const CartProducts = (props) => {
     <div className="cart-products">
       <header className="title">
         <h1>
-          Seu carrinho tem <span>{totalItems} itens</span>
+          Seu carrinho tem{' '}
+          <span>
+            {totalItems} {totalItems === 1 ? 'item' : 'itens'}
+          </span>
         </h1>
         <img src={closeBtn} alt="botão para fechar" />
       </header>

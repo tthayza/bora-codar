@@ -37,7 +37,7 @@
   padding: 1.2rem;
 }
 
-.amount .btn {
+.amount .btn-amount {
   border-radius: 0.8rem;
   width: 4rem;
   height: 4rem;
@@ -46,11 +46,11 @@
   background-color: transparent;
 }
 
-.btn {
+.btn-amount {
   transition: all 0.2s ease-out;
 }
 
-.btn:hover {
+.btn-amount:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-out;
   cursor: pointer;

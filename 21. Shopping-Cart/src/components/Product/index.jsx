@@ -32,12 +32,15 @@ const Product = (props) => {
           <p>{formatedPrice}</p>
           <div className="amount">
             <button
-              className="minus btn"
+              className="minus btn-amount"
               onClick={decreasesAmount}
               disabled={amount <= 0}
             ></button>
             <p>{amount}</p>
-            <button className="plus btn" onClick={increaseAmount}></button>
+            <button
+              className="plus btn-amount"
+              onClick={increaseAmount}
+            ></button>
           </div>
         </div>
       </div>
