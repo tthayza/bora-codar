@@ -16,3 +16,26 @@
   display: flex;
   font-family: 'Inter', sans-serif;
 }
+
+.left {
+  background-color: rgb(26, 20, 23);
+  width: 100%;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty {
+  text-decoration: overline;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  font-size: 4rem;
+}
+
+.empty:hover {
+  letter-spacing: 0.4rem;
+  color: #83133a;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}

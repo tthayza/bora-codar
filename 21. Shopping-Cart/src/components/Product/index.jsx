@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { ProductContext } from '../../context/ProductContext'
 import './style.css'
 const Product = (props) => {
   const [amount, setAmount] = useState(0)
-  const { name, price, image, increase, decreases } = props
+  const { name, price, image } = props
   const formatedName =
     name.replace(/\s/g, '').length <= 58
       ? name
@@ -11,16 +12,21 @@ const Product = (props) => {
     style: 'currency',
     currency: 'BRL'
   })
+  const { showProduct, increaseValue, decreasesValue } =
+    useContext(ProductContext)
   const decreasesAmount = () => {
     setAmount(amount - 1)
-    decreases(Number.parseFloat(price))
+    decreasesValue(Number.parseFloat(price))
   }
   const increaseAmount = () => {
     setAmount(amount + 1)
-    increase(Number.parseFloat(price))
+    increaseValue(Number.parseFloat(price))
   }
   return (
-    <div className="product">
+    <div
+      className="product"
+      onClick={() => showProduct(name, formatedPrice, image)}
+    >
       <figure>
         <img src={image} alt="imagem do produto" />
       </figure>

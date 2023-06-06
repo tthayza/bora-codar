@@ -2,6 +2,7 @@
   width: 45%;
   height: 100%;
   background: #18181b;
+  align-self: flex-end;
 }
 
 .title {
