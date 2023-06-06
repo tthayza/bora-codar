@@ -129,6 +129,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/20.%20Image-Gallery"><strong>Image Gallery</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/20.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>21</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/21.%20Shopping-Cart"><strong>Shopping Cart</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/21.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
