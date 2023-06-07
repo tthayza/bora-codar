@@ -136,7 +136,7 @@
         </tr>
         <tr>
             <td><strong>22</strong></td>
-            <td><a href="https://github.com/tthayza/bora-codar/tree/main/22.%20Profile-Settings"><strong>Profile Settins</strong></a></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/22.%20Profile-Settings"><strong>Profile Settings</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/22.png" /></a></td>
         </tr>
     </tbody>
