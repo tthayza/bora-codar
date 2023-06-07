@@ -1,0 +1,31 @@
+.item {
+  justify-content: space-between;
+  padding: 0.8rem 0.2rem;
+  transition: all 0.2s ease-in;
+}
+.details {
+  gap: 0.8rem;
+}
+.icon {
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+.item:hover .icon {
+  opacity: 1;
+  transform: scale(1.02);
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: rgb(252, 214, 233);
+  border-radius: 0.8rem;
+  color: #7c3b4b;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}

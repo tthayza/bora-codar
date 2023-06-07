@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(110deg, #7c3b4b 0%, #ef4650 100%);
+  font-family: 'Heebo', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

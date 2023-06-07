@@ -1,0 +1,69 @@
+.settings {
+  width: 30%;
+  height: fit-content;
+  background: #fdfcfe;
+
+  border: 1px solid #f4effa;
+  box-shadow: 0px 52px 21px rgba(30, 30, 30, 0.01),
+    0px 29px 18px rgba(30, 30, 30, 0.05), 0px 13px 13px rgba(30, 30, 30, 0.09),
+    0px 3px 7px rgba(30, 30, 30, 0.1), 0px 0px 0px rgba(30, 30, 30, 0.1);
+  border-radius: 1.2rem;
+
+  padding: 2.4rem 2.4rem 1.6rem;
+}
+
+.header {
+  display: flex;
+  gap: 1.6rem;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid #f4effa;
+}
+
+.header img {
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.informations h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+  color: #38343d;
+}
+
+.informations p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #686071;
+}
+
+main {
+  width: 100%;
+  /* border: #38343d 1px solid; */
+}
+
+section {
+  padding: 1.6rem 0;
+  border-bottom: 1px solid #f4effa;
+}
+
+section h3 {
+  margin-bottom: 1.2rem;
+  color: #797085;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+}
+
+section p,
+footer p {
+  color: #38343d;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+footer {
+  padding-top: 1.6rem;
+}
