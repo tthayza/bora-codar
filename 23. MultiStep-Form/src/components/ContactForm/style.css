@@ -1,0 +1,56 @@
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+form .input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+form .input label {
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #323238;
+  font-weight: 700;
+}
+
+form .input input {
+  border: 0.1rem solid #e1e1e6;
+  border-radius: 0.2rem;
+  padding: 0.8rem 1.6rem;
+  width: 52.8rem;
+  height: 5.6rem;
+}
+
+form .input input[placeholder] {
+  font-family: 'IBM Plex Sans';
+  color: #8d8d99;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+footer {
+  margin-top: 3.2rem;
+  width: 100%;
+  /* border: #323238 solid 1px; */
+}
+
+button {
+  margin-left: 70%;
+  background: #633bbc;
+  border-radius: 0.6rem;
+  width: 15.8rem;
+  height: 5.6rem;
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
