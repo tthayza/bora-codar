@@ -1,29 +1,33 @@
+import { Input } from '../Input'
 import './style.css'
 export const ContactForm = (props) => {
-  const { visibility, currentDisplayContact } = props
+  const { nextForm } = props
   return (
-    <div className="contact-form" style={{ display: visibility }}>
-      <form action="">
-        <div className="input">
-          <label htmlFor="name">Nome</label>
-          <input type="text" id="name" placeholder="Como prefere ser chamado" />
-        </div>
-        <div className="input">
-          <label htmlFor="number">Telefone</label>
-          <input
-            type="tel"
-            name=""
-            id="number"
-            placeholder="Digite seu número de WhatsApp"
-          />
-        </div>
-        <div className="input">
-          <label htmlFor="email">E-mail</label>
-          <input type="email" id="email" placeholder="Digite seu e-mail" />
-        </div>
+    <div>
+      <form>
+        <Input
+          name={'Nome'}
+          text={'Como prefere ser chamado'}
+          htmlFor={'name'}
+          id={'name'}
+        />
+        <Input
+          name={'Telefone'}
+          text={'Digite seu número de WhatsApp'}
+          htmlFor={'number'}
+          id={'number'}
+        />
+        <Input
+          name={'E-mail'}
+          text={'Digite seu e-mail'}
+          htmlFor={'email'}
+          id={'email'}
+        />
       </form>
-      <footer>
-        <button onClick={currentDisplayContact}>Continuar</button>
+      <footer className="contact-footer">
+        <button onClick={nextForm} className="next">
+          Continuar
+        </button>
       </footer>
     </div>
   )

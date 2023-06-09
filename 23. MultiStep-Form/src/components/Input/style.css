@@ -1,0 +1,21 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input input {
+  border: 0.1rem solid #e1e1e6;
+  border-radius: 0.2rem;
+  padding: 0.8rem 1.6rem;
+  width: 100%;
+  height: 5.6rem;
+}
+
+.input input[placeholder] {
+  font-family: 'IBM Plex Sans';
+  color: #8d8d99;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
