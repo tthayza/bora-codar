@@ -3,10 +3,11 @@ export const ProjectForm = (props) => {
   return (
     <div className="project-form">
       <div className="text-area">
-        <label htmlFor="">Objetivos do projeto</label>
+        <label htmlFor="goals">Objetivos do projeto</label>
         <textarea
+          style={{ color: '#323238' }}
           name=""
-          id=""
+          id="goals"
           placeholder="Descreva quais os objetivos desse projeto"
         ></textarea>
       </div>

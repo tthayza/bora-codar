@@ -19,10 +19,11 @@ export const CompanyForm = (props) => {
         />
 
         <div className="text-area">
-          <label htmlFor="">Sobre seu negócio</label>
+          <label htmlFor="about">Sobre seu negócio</label>
           <textarea
+            style={{ color: '#323238' }}
             name=""
-            id=""
+            id="about"
             placeholder="Fale um pouco sobre seus produtos ou serviços"
           ></textarea>
         </div>

@@ -4,7 +4,12 @@ export const Input = (props) => {
   return (
     <div className="input">
       <label htmlFor={htmlFor}>{name}</label>
-      <input type="text" id={id} placeholder={text} />
+      <input
+        type="text"
+        id={id}
+        placeholder={text}
+        style={{ color: '#323238' }}
+      />
     </div>
   )
 }
