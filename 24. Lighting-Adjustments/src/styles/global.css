@@ -21,18 +21,20 @@
 }
 
 .container {
-  width: 40%;
+  width: 80%;
   height: 100%;
   /* border: solid 1px khaki; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 10rem;
 }
 
 section:nth-child(1) {
   width: 100%;
-  height: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
   /* border: solid 1px hotpink; */
 }
 
@@ -50,7 +52,7 @@ section:nth-child(2) h1 {
   line-height: 3.8rem;
 }
 
-.ranges {
-  width: 100%;
-  margin: 6rem 3rem 0;
+.sliders {
+  width: 80%;
+  margin: 4rem 3rem 0;
 }

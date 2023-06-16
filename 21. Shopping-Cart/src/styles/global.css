@@ -12,7 +12,7 @@
 .app {
   width: 100vw;
   height: 100vh;
-  background-color: darkslateblue;
+  background-color: rgb(72, 61, 139);
   display: flex;
   font-family: 'Inter', sans-serif;
 }
