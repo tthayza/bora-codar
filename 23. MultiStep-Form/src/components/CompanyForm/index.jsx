@@ -10,12 +10,14 @@ export const CompanyForm = (props) => {
           text={'Qual é o nome da empresa'}
           htmlFor={'company-name'}
           id={'company-name'}
+          type={'text'}
         />
         <Input
           name={'Número de funcionários'}
           text={'Digite o número de colaboradores'}
           htmlFor={'number-of-employees'}
           id={'number-of-employees'}
+          type={'number'}
         />
 
         <div className="text-area">
@@ -25,6 +27,7 @@ export const CompanyForm = (props) => {
             name=""
             id="about"
             placeholder="Fale um pouco sobre seus produtos ou serviços"
+            type={'text'}
           ></textarea>
         </div>
       </form>

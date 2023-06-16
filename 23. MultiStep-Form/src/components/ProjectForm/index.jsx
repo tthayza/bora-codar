@@ -9,6 +9,7 @@ export const ProjectForm = (props) => {
           name=""
           id="goals"
           placeholder="Descreva quais os objetivos desse projeto"
+          type={'text'}
         ></textarea>
       </div>
       <footer className="buttons">
