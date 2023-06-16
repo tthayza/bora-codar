@@ -1,7 +1,6 @@
 .preview {
   width: 40%;
   height: 100%;
-  /* border: solid 1px palegoldenrod; */
   border-radius: 0 0 100rem 100rem;
   opacity: 0.65;
 }

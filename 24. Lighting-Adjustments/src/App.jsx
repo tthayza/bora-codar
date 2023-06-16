@@ -5,16 +5,17 @@ import { RangeSlider } from './components/RangeSlider'
 import './styles/global.css'
 
 function App() {
-  const [currentColor, setCurrentColor] = useState('white')
-  const [currentBrightness, setCurrentBrightness] = useState(0)
-  const [currentContrast, setCurrentContrast] = useState(0)
+  const [currentColor, setCurrentColor] = useState(335)
+  const [currentBrightness, setCurrentBrightness] = useState(50)
+  const [currentContrast, setCurrentContrast] = useState(50)
+  const hslString = `hsl(${currentColor}, ${currentContrast}%, ${currentBrightness}%)`
 
   return (
     <div className="app">
       <main className="container">
         <section>
           <Preview
-            currentColor={currentColor}
+            currentColor={hslString}
             brightnessPercent={currentBrightness}
             contrastPercent={currentContrast}
           />
@@ -27,16 +28,19 @@ function App() {
               color={currentColor}
               setValue={setCurrentColor}
               icon={<PaletteIcon size={24} color="white" />}
+              maxValue={360}
             />
             <RangeSlider
               name="brightness"
               setValue={setCurrentBrightness}
               icon={<SunDimIcon size={24} color="white" />}
+              value={50}
             />
             <RangeSlider
               name="contrast"
               setValue={setCurrentContrast}
               icon={<ContrastIcon size={24} color="white" />}
+              value={50}
             />
           </div>
         </section>

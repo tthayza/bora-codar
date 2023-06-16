@@ -14,6 +14,7 @@ input[type='range'] {
   height: 100%;
   background: #d9d9d9;
   border-radius: 99rem;
+  cursor: pointer;
 }
 
 input[type='range'].color {
@@ -34,7 +35,6 @@ input[type='range'].color::-webkit-slider-thumb {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  cursor: ew-resize;
   border: solid #d9d9d9 0.1rem;
 }
 
@@ -45,6 +45,5 @@ input[type='range'].contrast::-webkit-slider-thumb {
   width: 2rem;
   border-radius: 50%;
   background: black;
-  cursor: ew-resize;
   border: solid #d9d9d9 0.1rem;
 }
