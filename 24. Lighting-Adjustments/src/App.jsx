@@ -9,7 +9,6 @@ function App() {
   const [currentBrightness, setCurrentBrightness] = useState(50)
   const [currentContrast, setCurrentContrast] = useState(50)
   const hslString = `hsl(${currentColor}, ${currentContrast}%, ${currentBrightness}%)`
-
   return (
     <div className="app">
       <main className="container">
@@ -25,7 +24,6 @@ function App() {
           <div className="sliders">
             <RangeSlider
               name="color"
-              color={currentColor}
               setValue={setCurrentColor}
               icon={<PaletteIcon size={24} color="white" />}
               maxValue={360}
