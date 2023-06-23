@@ -1,0 +1,20 @@
+.header {
+  padding: 0.8rem 1.2rem;
+  gap: 2.4rem;
+}
+
+.actions {
+  gap: 1.6rem;
+}
+
+.input-area {
+  padding: 1.2rem;
+  gap: 4.8rem;
+
+  border-top: solid 1px rgb(53, 49, 49);
+  border-bottom: solid 1px rgb(134, 132, 132);
+  border-radius: 99rem;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.1) inset,
+    0px 1px 0px 0px rgba(0, 0, 0, 0.2) inset;
+}

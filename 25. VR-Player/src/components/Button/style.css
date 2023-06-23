@@ -1,0 +1,16 @@
+button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 99rem;
+  padding: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.2);
+
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/bg.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  padding: 3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.bg-blur {
+  border: solid 1px grey;
+  border-radius: 99rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 1px 0px rgba(255, 255, 255, 0.3) inset,
+    0px -1px 1px 0px rgba(255, 255, 255, 0.1) inset;
+  backdrop-filter: blur(16px);
+}
