@@ -10,7 +10,7 @@ function App() {
         <aside className="flex">
           <SideMenu />
         </aside>
-        <main>
+        <main className="flex">
           <Header />
 
           <Player />
