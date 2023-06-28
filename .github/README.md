@@ -149,6 +149,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/24.%20Lighting-Adjustments"><strong>Lightning Adjustments</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/24.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>25</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/25.%20VR-Player"><strong>VR Player</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/25.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
