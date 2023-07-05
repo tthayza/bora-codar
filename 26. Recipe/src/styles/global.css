@@ -11,5 +11,11 @@
 .app {
   width: 100vw;
   height: 100vh;
-  background-color: wheat;
+  font-family: Source Sans Pro;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
