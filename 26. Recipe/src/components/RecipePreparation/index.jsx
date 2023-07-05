@@ -1,6 +1,7 @@
 import { Basket, CookingPot } from '@phosphor-icons/react'
 import './style.css'
-export const RecipePreparation = () => {
+export const RecipePreparation = (props) => {
+  const { serving } = props
   return (
     <div className="recipe-preparation">
       <div className="ingredients">
@@ -9,9 +10,18 @@ export const RecipePreparation = () => {
           Ingredientes
         </h2>
         <ul>
-          <li>1 espiga de milho verde</li>
-          <li>1 colher de sopa de açúcar</li>
-          <li>1 colher de sopa de manteiga</li>
+          <li>
+            {serving < 1 ? 1 : serving} espiga{`${serving > 1 ? 's' : ''}`} de
+            milho verde
+          </li>
+          <li>
+            {serving < 1 ? 1 : serving} colher{`${serving > 1 ? 'es' : ''}`} de
+            sopa de açúcar
+          </li>
+          <li>
+            {serving < 1 ? 1 : serving} colher{`${serving > 1 ? 'es' : ''}`} de
+            sopa de manteiga
+          </li>
           <li>Sal a gosto</li>
           <li>Palma de milho (para embrulhar)</li>
         </ul>
