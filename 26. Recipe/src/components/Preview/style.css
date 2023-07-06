@@ -37,4 +37,17 @@
 .btn {
   background-color: transparent;
   border: none;
+  transition: ease 1s;
+}
+
+.btn:hover {
+  scale: 1.12;
+  cursor: pointer;
+  transition: ease 0.4s;
+  filter: opacity(0.8);
+}
+
+.btn:disabled {
+  filter: opacity(0.4);
+  cursor: not-allowed;
 }
