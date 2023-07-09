@@ -154,6 +154,16 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/25.%20VR-Player"><strong>VR Player</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/25.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>26</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/26.%20Recipe"><strong>Recipe</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/26.png" /></a></td>
+        </tr>
+        <tr>
+            <td><strong>27</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/27.%20Error-Page"><strong>Error Page</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/27.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
