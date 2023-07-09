@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --gray1: #d6d6f2;
+  --gray2: #e2e2f5;
+  --purple: #bf7bfb;
+  --blue-light: #212187;
+  --blue: #151557;
+  --blue-dark: #000013;
+}
+
+.app {
+  background-image: url(../assets/bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray1);
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.error-code {
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0rem 0rem 10rem rgba(112, 0, 255, 0.7));
+}
+
+.error-infos {
+  width: 38rem;
+}
+
+.error-infos h1 {
+  line-height: 120%;
+  font-size: 4rem;
+  margin-bottom: 2.4rem;
+}
+
+.error-infos p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 140%;
+  margin-bottom: 5.6rem;
+}
+
+iframe {
+  border: none;
+  background-color: transparent;
+  width: 23rem;
+  height: 23rem;
+}
+
+.buttons-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.btn {
+  padding: 1.2rem 2.4rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: var(--gray2);
+  background-color: var(--blue);
+  border-radius: 99rem;
+  text-align: center;
+  border: none;
+  font-family: Outfit;
+
+  line-height: 140%;
+  font-weight: 500;
+}
