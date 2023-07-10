@@ -83,10 +83,39 @@ iframe {
   color: var(--gray2);
   background-color: var(--blue);
   border-radius: 99rem;
-  text-align: center;
   border: none;
   font-family: Outfit;
 
-  line-height: 140%;
   font-weight: 500;
+  transition: 0.35s ease-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  filter: drop-shadow(0rem 0rem 7rem rgba(112, 0, 255, 0.7));
+  background-color: var(--blue-light);
+  transition: 0.35s ease-out;
+  scale: 1.05;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .error-infos h1,
+  .error-infos p {
+    text-align: center;
+  }
+
+  .buttons-area {
+    display: flex;
+    justify-content: space-around;
+  }
 }
