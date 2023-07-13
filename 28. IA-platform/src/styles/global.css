@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --gray-01: #f8fafc;
+  --gray-02: #e2e8f0;
+  --gray-03: #94a3b8;
+  --gray-04: #334155;
+  --gray-05: #1e293b;
+  --gray-06: #0f172a;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  border-radius: 3.2rem;
+  border: 0.1rem solid var(--gray-04, #334155);
+  background: rgba(2, 6, 23, 0.8);
+  padding: 6rem;
+  width: 80%;
+  height: 75%;
+}
