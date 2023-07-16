@@ -22,16 +22,10 @@
   background-position: center;
   background-size: cover;
   font-family: 'IBM Plex Sans', sans-serif;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .container {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   border-radius: 3.2rem;
   border: 0.1rem solid var(--gray-04, #334155);
   background: rgba(2, 6, 23, 0.8);
@@ -48,11 +42,19 @@
   gap: 1.6rem;
 }
 
+.divider {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--gray-04);
+}
+
 .icon {
   background-color: var(--gray-06);
   padding: 1.2rem;
   border-radius: 1.6rem;
+}
 
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;

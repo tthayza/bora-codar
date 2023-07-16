@@ -4,13 +4,14 @@ import {
   MusicNotesSimple,
   PlayCircle
 } from '@phosphor-icons/react'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Option from './components/Option'
 import './styles/global.css'
 function App() {
   return (
-    <div className="app">
-      <div className="container">
+    <div className="app flex">
+      <div className="container flex">
         <Header />
         <main className="main">
           <Option
@@ -31,6 +32,8 @@ function App() {
             action="Criador de áudios e musicas "
           />
         </main>
+        <div className="divider"></div>
+        <Footer />
       </div>
     </div>
   )

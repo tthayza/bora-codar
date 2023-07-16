@@ -1,0 +1,31 @@
+footer {
+  width: 100%;
+  gap: 1.6rem;
+  margin-top: 4rem;
+}
+
+.input-footer {
+  width: 80%;
+
+  background-color: var(--gray-06);
+  border-radius: 1.6rem;
+  border: 0.1rem solid var(--gray-04);
+  padding: 1.6rem;
+
+  gap: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.input-footer p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gray-02);
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--gray-04);
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+}
