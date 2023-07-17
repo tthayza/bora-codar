@@ -28,4 +28,5 @@ button {
   border: 1px solid var(--gray-04);
   padding: 1.6rem;
   border-radius: 1.6rem;
+  transition: all 0.2s ease;
 }
