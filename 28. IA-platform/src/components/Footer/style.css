@@ -1,7 +1,9 @@
 footer {
   width: 100%;
   gap: 1.6rem;
-  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .input-footer {

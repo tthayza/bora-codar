@@ -1,21 +1,24 @@
 .option {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   padding: 1.6rem;
 
   background-color: var(--gray-06);
   border-radius: 1.6rem;
+  justify-content: space-between;
 }
 
 .option-i,
 .option {
   border: 1px solid var(--gray-05);
+  display: flex;
+  align-items: center;
 }
 
 .icon-infos {
   gap: 2.4rem;
+  display: flex;
+  align-items: center;
 }
 
 .icon-infos p {

@@ -10,8 +10,8 @@ import Option from './components/Option'
 import './styles/global.css'
 function App() {
   return (
-    <div className="app flex">
-      <div className="container flex">
+    <div className="app">
+      <div className="container">
         <Header />
         <main className="main">
           <Option
