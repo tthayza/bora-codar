@@ -164,6 +164,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/27.%20Error-Page"><strong>Error Page</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/27.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>28</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/28.%20IA-platform"><strong>IA Platform</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/28.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
