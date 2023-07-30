@@ -7,44 +7,60 @@
 .app {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(58, 8, 19);
-  color: lightsalmon;
+  background-color: rgb(8, 6, 44);
+  color: rgb(214, 92, 43);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   gap: 2rem;
-  padding: 4rem;
+  padding: 2rem;
+
+  overflow: hidden;
 }
 
 .container {
-  width: 90%;
-  height: 85%;
-  border: 2px solid khaki;
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
 
-  display: flex;
+  width: 80vw;
+  border: 8px solid white;
+  border-radius: 0.3rem;
 }
 
-.slider {
-  background-color: white;
-  width: 0.8rem;
-}
-.slider:hover {
-  cursor: col-resize;
+figure {
+  position: absolute;
 }
 
-.image {
+img {
+  width: 80vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.after {
+  overflow: hidden;
+}
+
+#slider {
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.pixelated-pic {
-  background-image: url(../assets/pixelated-image.png);
-}
-
-.pic {
-  background-image: url(../assets/image.png);
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: unset;
+  appearance: unset;
+  width: 8px;
+  height: 100vh;
+  background-color: white;
+  cursor: pointer;
 }
