@@ -8,13 +8,12 @@ const App = () => {
 
   const handleSliderChange = (value) => {
     setSliderValue(value)
-    console.log(sliderValue)
   }
 
   return (
-    <div className="app">
+    <main className="app">
       <h1>Antes e depois com imagem gerada por IA</h1>
-      <div className="container">
+      <section className="container">
         <figure className="before">
           <img src={beforeImg} alt="Low Quality" />
         </figure>
@@ -29,8 +28,8 @@ const App = () => {
           id="slider"
           onInput={(e) => handleSliderChange(e.target.value)}
         />
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 
