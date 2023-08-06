@@ -169,6 +169,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/28.%20IA-platform"><strong>IA Platform</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/28.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>29</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/29.%20Before-After-IA"><strong>Before and After - IA</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/29.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
