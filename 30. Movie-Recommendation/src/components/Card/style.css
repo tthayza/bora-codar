@@ -2,21 +2,27 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 20%;
+  align-items: center;
+  width: 28rem;
+  height: 45rem;
   color: white;
 }
 
 .card header {
   display: flex;
+
   justify-content: space-between;
   margin-bottom: 1.2rem;
+  width: 75%;
+  height: 3.2rem;
+  align-items: center;
 }
 
 .card header h2 {
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  line-height: 100%;
+  width: 85%;
 }
 
 .card header span {
@@ -38,11 +44,12 @@
 .card footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 footer .movie-infos {
   display: flex;
-  justify-content: space-between;
+  gap: 9rem;
 }
 
 footer .movie-infos span {
@@ -57,6 +64,7 @@ footer .movie-infos span {
 }
 
 .card footer button {
+  width: 20rem;
   background-color: #2b2b37;
   border-radius: 0.4rem;
 
@@ -72,4 +80,10 @@ footer .movie-infos span {
   font-weight: 400;
   line-height: 125%;
   font-family: Outfit;
+  margin-top: 1rem;
+}
+
+.card footer button:hover {
+  background-color: #373745;
+  cursor: pointer;
 }
