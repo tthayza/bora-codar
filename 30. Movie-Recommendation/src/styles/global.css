@@ -60,3 +60,8 @@
   opacity: 0.2;
   border-radius: 99rem;
 }
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
