@@ -174,6 +174,11 @@
             <td><a href="https://github.com/tthayza/bora-codar/tree/main/29.%20Before-After-IA"><strong>Before and After - IA</strong></a></td>
             <td align="center" ><a href="07"><img width="250px" src="./preview/29.png" /></a></td>
         </tr>
+        <tr>
+            <td><strong>30</strong></td>
+            <td><a href="https://github.com/tthayza/bora-codar/tree/main/30.%20Movie-Recommendation"><strong>Movie-Recommendation</strong></a></td>
+            <td align="center" ><a href="07"><img width="250px" src="./preview/30.png" /></a></td>
+        </tr>
     </tbody>
 </table></p>
 
